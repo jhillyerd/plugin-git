@@ -4,7 +4,7 @@ function init -a path --on-event init_git
   abbr -a ga         git add
   abbr -a gaa        git add --all
   abbr -a gapa       git add --patch
-  abbr -a gba        git branch -a
+  abbr -a gba        git branch -a -v
   abbr -a gbr        git branch
   abbr -a gc         git commit -v
   abbr -a gc!        git commit -v --amend
