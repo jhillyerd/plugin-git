@@ -4,5 +4,5 @@
 #
 # these alias commit and uncomit wip branches
 function gwip
-  git add -A; git ls-files --deleted -z | xargs -r0 git rm; git commit -m "--wip--"
+  git add -A; git rm (git ls-files --deleted) ^/dev/null; git commit -m "--wip--"
 end
