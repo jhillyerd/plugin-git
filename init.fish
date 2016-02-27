@@ -28,7 +28,11 @@ function init -a path --on-event init_git
   abbr -a gmt        git mergetool --no-prompt
   abbr -a gp         git push
   abbr -a gr         git remote
-  abbr -a grbi       git rebase -i
+  abbr -a grba       git rebase --abort
+  abbr -a grbc       git rebase --continue
+  abbr -a grbi       git rebase --interactive
+  abbr -a grbm       git rebase master
+  abbr -a grbs       git rebase --skip
   abbr -a grh        git reset HEAD
   abbr -a grhh       git reset HEAD --hard
   abbr -a grmv       git remote rename
