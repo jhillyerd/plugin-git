@@ -16,6 +16,10 @@ function init -a path --on-event init_git
   abbr -a gcp        git cherry-pick
   abbr -a gd         git diff
   abbr -a gdca       git diff --cached
+  abbr -a gff        git flow feature
+  abbr -a gfr        git flow release
+  abbr -a gfh        git flow hotfix
+  abbr -a gfs        git flow support
   abbr -a gignore    git update-index --assume-unchanged
   abbr -a gk         gitk --all --branches
   abbr -a gl         git pull
