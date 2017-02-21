@@ -36,12 +36,12 @@ function init -a path --on-event init_git
 
   # Conflict (C)
   abbr -a gCl git status | sed -n "s/^.*both [a-z]*ed: *//p"
-  abbr -a gCa git add $(gCl)
-  abbr -a gCe git mergetool $(gCl)
+  abbr -a gCa git add (gCl)
+  abbr -a gCe git mergetool (gCl)
   abbr -a gCo git checkout --ours --
-  abbr -a gCO gCo $(gCl)
+  abbr -a gCO gCo (gCl)
   abbr -a gCt git checkout --theirs --
-  abbr -a gCT gCt $(gCl)
+  abbr -a gCT gCt (gCl)
 
   # Data (d)
   abbr -a gd  git ls-files
@@ -82,7 +82,7 @@ function init -a path --on-event init_git
   abbr -a gls git log --topo-order --stat --pretty=format:(__git.log_medium_format)
   abbr -a gld git log --topo-order --stat --patch --full-diff --pretty=format:(__git.log_medium_format)
   abbr -a glo git log --topo-order --pretty=format:(__git.log_oneline_format)
-  abbr -a glg git log --topo-order --all --graph --pretty=format:${_git_log_oneline_format}
+  abbr -a glg git log --topo-order --all --graph --pretty=format:(__git.log_oneline_format)
   abbr -a glb git log --topo-order --pretty=format:(__git.log_brief_format)
   abbr -a glc git shortlog --summary --numbered
 
@@ -97,7 +97,7 @@ function init -a path --on-event init_git
   abbr -a gp  git push
   abbr -a gpf git push --force
   abbr -a gpa git push --all
-  abbr -a gpA git push --all && git push --tags
+  abbr -a gpA git push --all and git push --tags
   abbr -a gpt git push --tags
   abbr -a gpc git push --set-upstream origin (__git.current_branch)
   abbr -a gpp git pull origin (__git.current_branch); and git push origin (__git.current_branch)
