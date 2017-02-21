@@ -36,12 +36,8 @@ function init -a path --on-event init_git
 
   # Conflict (C)
   abbr -a gCl git status | sed -n "s/^.*both [a-z]*ed: *//p"
-  abbr -a gCa git add (gCl)
-  abbr -a gCe git mergetool (gCl)
   abbr -a gCo git checkout --ours --
-  abbr -a gCO gCo (gCl)
   abbr -a gCt git checkout --theirs --
-  abbr -a gCT gCt (gCl)
 
   # Data (d)
   abbr -a gd  git ls-files
@@ -78,13 +74,13 @@ function init -a path --on-event init_git
   abbr -a giX git rm -rf --cached
 
   # Log (l)
-  abbr -a gl  git log --topo-order --pretty=format:(__git.log_medium_format)
-  abbr -a gls git log --topo-order --stat --pretty=format:(__git.log_medium_format)
-  abbr -a gld git log --topo-order --stat --patch --full-diff --pretty=format:(__git.log_medium_format)
-  abbr -a glo git log --topo-order --pretty=format:(__git.log_oneline_format)
-  abbr -a glg git log --topo-order --all --graph --pretty=format:(__git.log_oneline_format)
-  abbr -a glb git log --topo-order --pretty=format:(__git.log_brief_format)
-  abbr -a glc git shortlog --summary --numbered
+  abbr -a gl         git log --topo-order
+  abbr -a glg        git log --stat --max-count=10
+  abbr -a glgg       git log --graph --max-count=10
+  abbr -a glgga      git log --graph --decorate --all
+  abbr -a glo        git log --oneline --decorate --color
+  abbr -a glog       git log --oneline --decorate --color --graph
+  abbr -a glc        git shortlog --summary --numbered
 
   # Merge (m)
   abbr -a gm  git merge
@@ -120,19 +116,18 @@ function init -a path --on-event init_git
   abbr -a gRs git remote show
   abbr -a gRb git-hub-browse
 
-  # Stash (s)
-  abbr -a gs  git stash
-  abbr -a gsa git stash apply
-  abbr -a gsx git stash drop
-  abbr -a gsX git-stash-clear-interactive
-  abbr -a gsl git stash list
-  abbr -a gsL git-stash-dropped
-  abbr -a gsd git stash show --patch --stat
-  abbr -a gsp git stash pop
-  abbr -a gsr git-stash-recover
-  abbr -a gss git stash save --include-untracked
-  abbr -a gsS git stash save --patch --no-keep-index
-  abbr -a gsw git stash save --include-untracked --keep-index
+  # Stash (st)
+  abbr -a gst        git stash
+  abbr -a gsta       git stash apply
+  abbr -a gstd       git stash drop
+  abbr -a gstp       git stash pop
+  abbr -a gsts       git stash show --text
+  abbr -a gstss      git stash save
+  abbr -a gstr       git-stash-recover
+  abbr -a gstl       git stash list
+
+  # Status (s)
+  abbr -a gs        git status
 
   # Submodule (S)
   abbr -a gS  git submodule
@@ -147,8 +142,6 @@ function init -a path --on-event init_git
   abbr -a gSx git-submodule-remove
 
   # Working Copy (w)
-  abbr -a gws git status --ignore-submodules=(__git.status_ignore_submodules) --short
-  abbr -a gwS git status --ignore-submodules=(__git.status_ignore_submodules)
   abbr -a gwd git diff --no-ext-diff
   abbr -a gwD git diff --no-ext-diff --word-diff
   abbr -a gwr git reset --soft
