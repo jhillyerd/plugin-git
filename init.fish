@@ -22,6 +22,9 @@ function init -a path --on-event init_git
   abbr -a gfs        git flow support
   abbr -a gignore    git update-index --assume-unchanged
   abbr -a gk         gitk --all --branches
+  abbr -a gf         git fetch
+  abbr -a gfa        git fetch --all --prune
+  abbr -a gfo        git fetch origin
   abbr -a gl         git pull
   abbr -a glg        git log --stat --max-count=10
   abbr -a glgg       git log --graph --max-count=10
