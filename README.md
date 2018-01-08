@@ -18,7 +18,67 @@ $ omf install https://github.com/jhillyerd/plugin-git
 
 ## Usage
 
-(Not yet written)
+| Abbreviation | Command                                              |
+| ------------ | ---------------------------------------------------- |
+| g            | `git`                                                |
+| ga           | `git add`                                            |
+| gaa          | `git add --all`                                      |
+| gapa         | `git add --patch`                                    |
+| gba          | `git branch -a -v`                                   |
+| gbr          | `git branch`                                         |
+| gc           | `git commit -v`                                      |
+| `gc!`        | `git commit -v --amend`                              |
+| gca          | `git commit -v -a`                                   |
+| `gca!`       | `git commit -v -a --amend`                           |
+| gcmsg        | `git commit -m`                                      |
+| gco          | `git checkout`                                       |
+| gcount       | `git shortlog -sn`                                   |
+| gcp          | `git cherry-pick`                                    |
+| gd           | `git diff`                                           |
+| gdca         | `git diff --cached`                                  |
+| gff          | `git flow feature`                                   |
+| gfr          | `git flow release`                                   |
+| gfh          | `git flow hotfix`                                    |
+| gfs          | `git flow support`                                   |
+| gignore      | `git update-index --assume-unchanged`                |
+| gk           | `gitk --all --branches`                              |
+| gf           | `git fetch`                                          |
+| gfa          | `git fetch --all --prune`                            |
+| gfo          | `git fetch origin`                                   |
+| gl           | `git pull`                                           |
+| glg          | `git log --stat --max-count=10`                      |
+| glgg         | `git log --graph --max-count=10`                     |
+| glgga        | `git log --graph --decorate --all`                   |
+| glo          | `git log --oneline --decorate --color`               |
+| glog         | `git log --oneline --decorate --color --graph`       |
+| gm           | `git merge`                                          |
+| gmt          | `git mergetool --no-prompt`                          |
+| gp           | `git push`                                           |
+| gr           | `git remote`                                         |
+| grba         | `git rebase --abort`                                 |
+| grbc         | `git rebase --continue`                              |
+| grbi         | `git rebase --interactive`                           |
+| grbm         | `git rebase master`                                  |
+| grbs         | `git rebase --skip`                                  |
+| grh          | `git reset HEAD`                                     |
+| grhh         | `git reset HEAD --hard`                              |
+| grmv         | `git remote rename`                                  |
+| grrm         | `git remote remove`                                  |
+| grset        | `git remote set-url`                                 |
+| grup         | `git remote update`                                  |
+| grv          | `git remote -v`                                      |
+| gsd          | `git svn dcommit`                                    |
+| gsr          | `git svn rebase`                                     |
+| gss          | `git status -s`                                      |
+| gst          | `git status`                                         |
+| gsta         | `git stash`                                          |
+| gstd         | `git stash drop`                                     |
+| gstp         | `git stash pop`                                      |
+| gsts         | `git stash show --text`                              |
+| gunignore    | `git update-index --no-assume-unchanged`             |
+| gup          | `git pull --rebase`                                  |
+| gwch         | `git whatchanged -p --abbrev-commit --pretty=medium` |
+
 
 # License
 
