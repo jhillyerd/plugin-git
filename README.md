@@ -25,7 +25,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gaa          | `git add --all`                                      |
 | gapa         | `git add --patch`                                    |
 | gba          | `git branch -a -v`                                   |
-| gbr          | `git branch`                                         |
+| gb           | `git branch`                                         |
 | gc           | `git commit -v`                                      |
 | `gc!`        | `git commit -v --amend`                              |
 | gca          | `git commit -v -a`                                   |
