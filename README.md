@@ -33,6 +33,8 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | `gca!`       | `git commit -v -a --amend`                           |
 | gcmsg        | `git commit -m`                                      |
 | gco          | `git checkout`                                       |
+| gcod         | `git checkout develop`                               |
+| gcom         | `git checkout master`                                |
 | gcount       | `git shortlog -sn`                                   |
 | gcp          | `git cherry-pick`                                    |
 | gd           | `git diff`                                           |
