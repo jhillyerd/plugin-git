@@ -17,6 +17,7 @@ abbr -a gc!        git commit -v --amend
 abbr -a gca        git commit -v -a
 abbr -a gca!       git commit -v -a --amend
 abbr -a gcmsg      git commit -m
+abbr -a gcl        git clone
 abbr -a gcount     git shortlog -sn
 abbr -a gcp        git cherry-pick
 abbr -a gd         git diff
@@ -66,5 +67,6 @@ abbr -a gwch       git whatchanged -p --abbrev-commit --pretty=medium
 
 # git checkout abbreviations
 abbr -a gco        git checkout
+abbr -a gcb        git checkout -b
 abbr -a gcod       git checkout develop
 abbr -a gcom       git checkout master
