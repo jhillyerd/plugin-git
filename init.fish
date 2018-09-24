@@ -14,8 +14,10 @@ abbr -a gba        git branch -a -v
 abbr -a gb         git branch
 abbr -a gc         git commit -v
 abbr -a gc!        git commit -v --amend
+abbr -a gc!n       git commit -v --amend --no-edit
 abbr -a gca        git commit -v -a
 abbr -a gca!       git commit -v -a --amend
+abbr -a gca!n      git commit -v -a --amend --no-edit
 abbr -a gcmsg      git commit -m
 abbr -a gcl        git clone
 abbr -a gcount     git shortlog -sn
@@ -37,6 +39,7 @@ abbr -a glgg       git log --graph --max-count=10
 abbr -a glgga      git log --graph --decorate --all
 abbr -a glo        git log --oneline --decorate --color
 abbr -a glog       git log --oneline --decorate --color --graph
+abbr -a gsh        git show
 abbr -a gm         git merge
 abbr -a gmt        git mergetool --no-prompt
 abbr -a gp         git push
