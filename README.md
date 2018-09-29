@@ -55,6 +55,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | glgg         | `git log --graph --max-count=10`                     |
 | glgga        | `git log --graph --decorate --all`                   |
 | glo          | `git log --oneline --decorate --color`               |
+| gloo         | `git log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short` |
 | glog         | `git log --oneline --decorate --color --graph`       |
 | gm           | `git merge`                                          |
 | gmt          | `git mergetool --no-prompt`                          |
