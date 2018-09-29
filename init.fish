@@ -14,10 +14,10 @@ abbr -a gba        git branch -a -v
 abbr -a gb         git branch
 abbr -a gc         git commit -v
 abbr -a gc!        git commit -v --amend
-abbr -a gc!n       git commit -v --amend --no-edit
+abbr -a gcn!       git commit -v --no-edit --amend
 abbr -a gca        git commit -v -a
 abbr -a gca!       git commit -v -a --amend
-abbr -a gca!n      git commit -v -a --amend --no-edit
+abbr -a gcan!      git commit -v -a --no-edit --amend
 abbr -a gcmsg      git commit -m
 abbr -a gcl        git clone
 abbr -a gcount     git shortlog -sn
