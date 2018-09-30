@@ -37,6 +37,7 @@ abbr -a glgg       git log --graph --max-count=10
 abbr -a glgga      git log --graph --decorate --all
 abbr -a glo        git log --oneline --decorate --color
 abbr -a glog       git log --oneline --decorate --color --graph
+abbr -a gloo       "git log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short"
 abbr -a gm         git merge
 abbr -a gmt        git mergetool --no-prompt
 abbr -a gp         git push
