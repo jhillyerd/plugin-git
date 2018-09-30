@@ -26,7 +26,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gaa          | `git add --all`                                      |
 | gapa         | `git add --patch`                                    |
 | gba          | `git branch -a -v`                                   |
-| gb           | `git branch`                                         |
+| gb           | `git branch -vv`                                     |
 | gc           | `git commit -v`                                      |
 | `gc!`        | `git commit -v --amend`                              |
 | gca          | `git commit -v -a`                                   |
@@ -59,7 +59,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gm           | `git merge`                                          |
 | gmt          | `git mergetool --no-prompt`                          |
 | gp           | `git push`                                           |
-| gr           | `git remote`                                         |
+| gr           | `git remote -vv`                                     |
 | grba         | `git rebase --abort`                                 |
 | grbc         | `git rebase --continue`                              |
 | grbi         | `git rebase --interactive`                           |

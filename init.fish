@@ -11,7 +11,7 @@ abbr -a ga         git add
 abbr -a gaa        git add --all
 abbr -a gapa       git add --patch
 abbr -a gba        git branch -a -v
-abbr -a gb         git branch
+abbr -a gb         git branch -vv
 abbr -a gc         git commit -v
 abbr -a gc!        git commit -v --amend
 abbr -a gca        git commit -v -a
@@ -40,7 +40,7 @@ abbr -a glog       git log --oneline --decorate --color --graph
 abbr -a gm         git merge
 abbr -a gmt        git mergetool --no-prompt
 abbr -a gp         git push
-abbr -a gr         git remote
+abbr -a gr         git remote -vv
 abbr -a grba       git rebase --abort
 abbr -a grbc       git rebase --continue
 abbr -a grbi       git rebase --interactive
