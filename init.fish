@@ -18,7 +18,7 @@ abbr -a gcn!       git commit -v --no-edit --amend
 abbr -a gca        git commit -v -a
 abbr -a gca!       git commit -v -a --amend
 abbr -a gcan!      git commit -v -a --no-edit --amend
-abbr -a gcmsg      git commit -m
+abbr -a gcm        git commit -m
 abbr -a gcl        git clone
 abbr -a gcount     git shortlog -sn
 abbr -a gcp        git cherry-pick
