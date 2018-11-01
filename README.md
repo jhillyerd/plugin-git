@@ -106,7 +106,6 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gd           | `git diff`                                           |
 | gdca         | `git diff --cached`                                  |
 | gignore      | `git update-index --assume-unchanged`                |
-| gk           | `gitk --all --branches`                              |
 | gf           | `git fetch`                                          |
 | gfa          | `git fetch --all --prune`                            |
 | gfo          | `git fetch origin`                                   |

@@ -29,7 +29,6 @@ abbr -a gfr        git flow release
 abbr -a gfh        git flow hotfix
 abbr -a gfs        git flow support
 abbr -a gignore    git update-index --assume-unchanged
-abbr -a gk         gitk --all --branches
 abbr -a gf         git fetch
 abbr -a gfa        git fetch --all --prune
 abbr -a gfo        git fetch origin
