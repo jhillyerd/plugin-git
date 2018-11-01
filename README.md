@@ -19,6 +19,15 @@ $ omf install https://github.com/jhillyerd/plugin-git
 
 ## Usage
 
+### Branch
+
+| Abbreviation | Command                                              |
+| ------------ | ---------------------------------------------------- |
+| gb           | `git branch -vv`                                     |
+| gba          | `git branch -a -v`                                   |
+| gbda         | delete all branches merged in current HEAD           |
+| ggsup        | git set upstream to origin/_current-branch_          |
+
 ### Checkout
 
 | Abbreviation | Command                                              |
@@ -53,12 +62,27 @@ $ omf install https://github.com/jhillyerd/plugin-git
 
 | Abbreviation | Command                                              |
 | ------------ | ---------------------------------------------------- |
+| gcount       | `git shortlog -sn`                                   |
 | glg          | `git log --stat --max-count=10`                      |
 | glgg         | `git log --graph --max-count=10`                     |
 | glgga        | `git log --graph --decorate --all`                   |
 | glo          | `git log --oneline --decorate --color`               |
 | gloo         | `git log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short` |
 | glog         | `git log --oneline --decorate --color --graph`       |
+| glp          | git log at requested pretty level                    |
+| gwch         | `git whatchanged -p --abbrev-commit --pretty=medium` |
+
+### Push & Pull
+
+| Abbreviation | Command                                              |
+| ------------ | ---------------------------------------------------- |
+| gl           | `git pull`                                           |
+| ggl          | pull origin _current-branch_                         |
+| gup          | `git pull --rebase`                                  |
+| gp           | `git push`                                           |
+| ggp          | push origin _current-branch_                         |
+| gpoat        | push all + tags to origin                            |
+| ggpnp        | pull & push origin _current-branch_                  |
 
 ### Rebase
 
@@ -69,6 +93,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | grbi         | `git rebase --interactive`                           |
 | grbm         | `git rebase master`                                  |
 | grbs         | `git rebase --skip`                                  |
+| ggu          | fetch & rebase _current-branch_ on top of the upstream branch |
 
 ### Remote
 
@@ -81,7 +106,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | grup         | `git remote update`                                  |
 | grv          | `git remote -v`                                      |
 
-### Stash
+### Stash & Work in Progress
 
 | Abbreviation | Command                                              |
 | ------------ | ---------------------------------------------------- |
@@ -89,6 +114,8 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gstd         | `git stash drop`                                     |
 | gstp         | `git stash pop`                                      |
 | gsts         | `git stash show --text`                              |
+| gwip         | commit a work-in-progress branch                     |
+| gunwip       | uncommit the work-in-progress branch                 |
 
 ### Everything Else
 
@@ -98,31 +125,29 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | ga           | `git add`                                            |
 | gaa          | `git add --all`                                      |
 | gapa         | `git add --patch`                                    |
-| gba          | `git branch -a -v`                                   |
-| gb           | `git branch -vv`                                     |
+| gcf          | list git configuration                               |
 | gcl          | `git clone`                                          |
-| gcount       | `git shortlog -sn`                                   |
+| gclean       | pristine working directory: reset and force clean    |
 | gcp          | `git cherry-pick`                                    |
 | gd           | `git diff`                                           |
 | gdca         | `git diff --cached`                                  |
+| gdv          | pipe git diff to `view` command                      |
 | gignore      | `git update-index --assume-unchanged`                |
+| gignored     | list temporarily ignored files                       |
 | gf           | `git fetch`                                          |
 | gfa          | `git fetch --all --prune`                            |
 | gfo          | `git fetch origin`                                   |
-| gl           | `git pull`                                           |
 | gm           | `git merge`                                          |
 | gmt          | `git mergetool --no-prompt`                          |
-| gp           | `git push`                                           |
 | grh          | `git reset HEAD`                                     |
 | grhh         | `git reset HEAD --hard`                              |
+| grt          | cd into the top of the current repository or submodule |
 | gsh          | `git show`                                           |
 | gsd          | `git svn dcommit`                                    |
 | gsr          | `git svn rebase`                                     |
 | gss          | `git status -s`                                      |
 | gst          | `git status`                                         |
 | gunignore    | `git update-index --no-assume-unchanged`             |
-| gup          | `git pull --rebase`                                  |
-| gwch         | `git whatchanged -p --abbrev-commit --pretty=medium` |
 
 
 # License
