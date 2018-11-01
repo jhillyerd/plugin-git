@@ -14,8 +14,10 @@ abbr -a gba        git branch -a -v
 abbr -a gb         git branch -vv
 abbr -a gc         git commit -v
 abbr -a gc!        git commit -v --amend
+abbr -a gcn!       git commit -v --no-edit --amend
 abbr -a gca        git commit -v -a
 abbr -a gca!       git commit -v -a --amend
+abbr -a gcan!      git commit -v -a --no-edit --amend
 abbr -a gcmsg      git commit -m
 abbr -a gcl        git clone
 abbr -a gcount     git shortlog -sn
@@ -54,6 +56,7 @@ abbr -a grrm       git remote remove
 abbr -a grset      git remote set-url
 abbr -a grup       git remote update
 abbr -a grv        git remote -v
+abbr -a gsh        git show
 abbr -a gsd        git svn dcommit
 abbr -a gsr        git svn rebase
 abbr -a gss        git status -s
