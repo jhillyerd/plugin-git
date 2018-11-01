@@ -29,8 +29,10 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gb           | `git branch -vv`                                     |
 | gc           | `git commit -v`                                      |
 | `gc!`        | `git commit -v --amend`                              |
+| `gcn!`       | `git commit -v --no-edit --amend`                    |
 | gca          | `git commit -v -a`                                   |
 | `gca!`       | `git commit -v -a --amend`                           |
+| `gcan!`      | `git commit -v -a --no-edit --amend`                 |
 | gcmsg        | `git commit -m`                                      |
 | gcl          | `git clone`                                          |
 | gco          | `git checkout`                                       |
@@ -73,6 +75,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | grset        | `git remote set-url`                                 |
 | grup         | `git remote update`                                  |
 | grv          | `git remote -v`                                      |
+| gsh          | `git show`                                           |
 | gsd          | `git svn dcommit`                                    |
 | gsr          | `git svn rebase`                                     |
 | gss          | `git status -s`                                      |
