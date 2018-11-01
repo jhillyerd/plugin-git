@@ -1,8 +1,7 @@
 # Work In Progress (wip)
-# These features allow to pause a branch development and switch to another one (wip)
+# These features allow to pause a branch development and switch to another one
 # When you want to go back to work, just unwip it
 #
-# these alias commit and uncomit wip branches
-function gwip
+function gwip -d "git commit a work-in-progress branch"
   git add -A; git rm (git ls-files --deleted) ^/dev/null; git commit -m "--wip--"
 end
