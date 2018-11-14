@@ -43,6 +43,7 @@ abbr -a gm         git merge
 abbr -a gmt        git mergetool --no-prompt
 abbr -a gp         git push
 abbr -a gr         git remote -vv
+abbr -a grb        git rebase
 abbr -a grba       git rebase --abort
 abbr -a grbc       git rebase --continue
 abbr -a grbi       git rebase --interactive

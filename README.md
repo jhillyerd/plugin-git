@@ -88,6 +88,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 
 | Abbreviation | Command                                              |
 | ------------ | ---------------------------------------------------- |
+| grb          | `git rebase`                                         |
 | grba         | `git rebase --abort`                                 |
 | grbc         | `git rebase --continue`                              |
 | grbi         | `git rebase --interactive`                           |
