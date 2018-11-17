@@ -53,6 +53,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 
 | Abbreviation | Command                                              |
 | ------------ | ---------------------------------------------------- |
+| gfb          | `git flow bugfix`                                    |
 | gff          | `git flow feature`                                   |
 | gfr          | `git flow release`                                   |
 | gfh          | `git flow hotfix`                                    |

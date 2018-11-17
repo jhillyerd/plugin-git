@@ -24,6 +24,7 @@ abbr -a gcount     git shortlog -sn
 abbr -a gcp        git cherry-pick
 abbr -a gd         git diff
 abbr -a gdca       git diff --cached
+abbr -a gfb        git flow bugfix
 abbr -a gff        git flow feature
 abbr -a gfr        git flow release
 abbr -a gfh        git flow hotfix
