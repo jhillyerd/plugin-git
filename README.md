@@ -58,6 +58,17 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gfr          | `git flow release`                                   |
 | gfh          | `git flow hotfix`                                    |
 | gfs          | `git flow support`                                   |
+| gfbs         | `git flow bugfix start`                              |
+| gffs         | `git flow feature start`                             |
+| gfrs         | `git flow release start`                             |
+| gfhs         | `git flow hotfix start`                              |
+| gfss         | `git flow support start`                             |
+| gfbt         | `git flow bugfix track`                              |
+| gfft         | `git flow feature track`                             |
+| gfrt         | `git flow release track`                             |
+| gfht         | `git flow hotfix track`                              |
+| gfst         | `git flow support track`                             |
+| gfp          | `git flow publish`                                   |
 
 ### Log
 
