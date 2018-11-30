@@ -24,11 +24,6 @@ abbr -a gcount     git shortlog -sn
 abbr -a gcp        git cherry-pick
 abbr -a gd         git diff
 abbr -a gdca       git diff --cached
-abbr -a gfb        git flow bugfix
-abbr -a gff        git flow feature
-abbr -a gfr        git flow release
-abbr -a gfh        git flow hotfix
-abbr -a gfs        git flow support
 abbr -a gignore    git update-index --assume-unchanged
 abbr -a gf         git fetch
 abbr -a gfa        git fetch --all --prune
@@ -75,3 +70,24 @@ abbr -a gco        git checkout
 abbr -a gcb        git checkout -b
 abbr -a gcod       git checkout develop
 abbr -a gcom       git checkout master
+
+# git flow abbreviations
+abbr -a gfb        git flow bugfix
+abbr -a gff        git flow feature
+abbr -a gfr        git flow release
+abbr -a gfh        git flow hotfix
+abbr -a gfs        git flow support
+
+abbr -a gfbs       git flow bugfix start
+abbr -a gffs       git flow feature start
+abbr -a gfrs       git flow release start
+abbr -a gfhs       git flow hotfix start
+abbr -a gfss       git flow support start
+
+abbr -a gfbt       git flow bugfix track
+abbr -a gfft       git flow feature track
+abbr -a gfrt       git flow release track
+abbr -a gfht       git flow hotfix track
+abbr -a gfst       git flow support track
+
+abbr -a gfp        git flow publish
