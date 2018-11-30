@@ -38,6 +38,7 @@ abbr -a gloo       "git log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgr
 abbr -a gm         git merge
 abbr -a gmt        git mergetool --no-prompt
 abbr -a gp         git push
+abbr -a gp!        git push -f
 abbr -a gr         git remote -vv
 abbr -a grb        git rebase
 abbr -a grba       git rebase --abort
