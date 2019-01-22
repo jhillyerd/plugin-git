@@ -12,6 +12,11 @@ abbr -a gaa        git add --all
 abbr -a gapa       git add --patch
 abbr -a gba        git branch -a -v
 abbr -a gb         git branch -vv
+abbr -a            gbs	git bisect
+abbr -a gbsb	     git bisect bad
+abbr -a gbsg	     git bisect good
+abbr -a gbsr	     git bisect reset
+abbr -a gbss	     git bisect start
 abbr -a gc         git commit -v
 abbr -a gc!        git commit -v --amend
 abbr -a gcn!       git commit -v --no-edit --amend
