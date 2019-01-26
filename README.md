@@ -19,6 +19,16 @@ $ omf install https://github.com/jhillyerd/plugin-git
 
 ## Usage
 
+### Bisect
+
+| Abbreviation | Command                                              |
+| ------------ | ---------------------------------------------------- |
+| gbs          | `git bisect`                                         |
+| gbsb         | `git bisect bad`                                     |
+| gbsg         | `git bisect good`                                    |
+| gbsr         | `git bisect reset`                                   |
+| gbss         | `git bisect start`                                   |
+
 ### Branch
 
 | Abbreviation | Command                                              |
