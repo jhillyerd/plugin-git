@@ -58,6 +58,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | `gca!`       | `git commit -v -a --amend`                           |
 | `gcan!`      | `git commit -v -a --no-edit --amend`                 |
 | gcm          | `git commit -m`                                      |
+| gcam         | `git commit -a -m`                                   |
 
 ### Flow
 
