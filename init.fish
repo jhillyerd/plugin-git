@@ -34,6 +34,7 @@ abbr -a gdca       git diff --cached
 abbr -a gignore    git update-index --assume-unchanged
 abbr -a gf         git fetch
 abbr -a gfa        git fetch --all --prune
+abbr -a gfm        "git fetch origin master --prune; and git merge FETCH_HEAD"
 abbr -a gfo        git fetch origin
 abbr -a gl         git pull
 abbr -a glg        git log --stat --max-count=10
