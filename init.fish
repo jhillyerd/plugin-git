@@ -46,6 +46,8 @@ abbr -a gm         git merge
 abbr -a gmt        git mergetool --no-prompt
 abbr -a gp         git push
 abbr -a gp!        git push --force-with-lease
+abbr -a gpv        git push --no-verify
+abbr -a gpv!       git push --no-verify --force-with-lease
 abbr -a gr         git remote -vv
 abbr -a grb        git rebase
 abbr -a grba       git rebase --abort
