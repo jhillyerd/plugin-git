@@ -105,6 +105,8 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gup          | `git pull --rebase`                                  |
 | gp           | `git push`                                           |
 | gp!          | `git push --force-with-lease`                        |
+| gpv          | `git push --no-verify`                               |
+| gpv!         | `git push --no-verify --force-with-lease`            |
 | ggp          | push origin _current-branch_                         |
 | gpoat        | push all + tags to origin                            |
 | ggpnp        | pull & push origin _current-branch_                  |
