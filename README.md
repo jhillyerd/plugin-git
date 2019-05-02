@@ -147,35 +147,36 @@ $ omf install https://github.com/jhillyerd/plugin-git
 
 ### Everything Else
 
-| Abbreviation | Command                                              |
-| ------------ | ---------------------------------------------------- |
-| g            | `git`                                                |
-| ga           | `git add`                                            |
-| gaa          | `git add --all`                                      |
-| gapa         | `git add --patch`                                    |
-| gcf          | list git configuration                               |
-| gcl          | `git clone`                                          |
-| gclean       | pristine working directory: reset and force clean    |
-| gcp          | `git cherry-pick`                                    |
-| gd           | `git diff`                                           |
-| gdca         | `git diff --cached`                                  |
-| gdv          | pipe git diff to `view` command                      |
-| gignore      | `git update-index --assume-unchanged`                |
-| gignored     | list temporarily ignored files                       |
-| gf           | `git fetch`                                          |
-| gfa          | `git fetch --all --prune`                            |
-| gfo          | `git fetch origin`                                   |
-| gm           | `git merge`                                          |
-| gmt          | `git mergetool --no-prompt`                          |
-| grh          | `git reset HEAD`                                     |
-| grhh         | `git reset HEAD --hard`                              |
-| grt          | cd into the top of the current repository or submodule |
-| gsh          | `git show`                                           |
-| gsd          | `git svn dcommit`                                    |
-| gsr          | `git svn rebase`                                     |
-| gss          | `git status -s`                                      |
-| gst          | `git status`                                         |
-| gunignore    | `git update-index --no-assume-unchanged`             |
+| Abbreviation | Command                                                     |
+| ------------ | --------------------------------------------------------    |
+| g            | `git`                                                       |
+| ga           | `git add`                                                   |
+| gaa          | `git add --all`                                             |
+| gapa         | `git add --patch`                                           |
+| gcf          | list git configuration                                      |
+| gcl          | `git clone`                                                 |
+| gclean       | pristine working directory: reset and force clean           |
+| gcp          | `git cherry-pick`                                           |
+| gd           | `git diff`                                                  |
+| gdca         | `git diff --cached`                                         |
+| gdv          | pipe git diff to `view` command                             |
+| gignore      | `git update-index --assume-unchanged`                       |
+| gignored     | list temporarily ignored files                              |
+| gf           | `git fetch`                                                 |
+| gfa          | `git fetch --all --prune`                                   |
+| gfm          | `git fetch origin master --prune; and git merge FETCH_HEAD` |
+| gfo          | `git fetch origin`                                          |
+| gm           | `git merge`                                                 |
+| gmt          | `git mergetool --no-prompt`                                 |
+| grh          | `git reset HEAD`                                            |
+| grhh         | `git reset HEAD --hard`                                     |
+| grt          | cd into the top of the current repository or submodule      |
+| gsh          | `git show`                                                  |
+| gsd          | `git svn dcommit`                                           |
+| gsr          | `git svn rebase`                                            |
+| gss          | `git status -s`                                             |
+| gst          | `git status`                                                |
+| gunignore    | `git update-index --no-assume-unchanged`                    |
 
 
 # License
