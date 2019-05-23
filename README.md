@@ -108,6 +108,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | ggp          | push origin _current-branch_                         |
 | gpoat        | push all + tags to origin                            |
 | ggpnp        | pull & push origin _current-branch_                  |
+| gpu          | git push --set-upsteam origin _current-branch_       |
 
 ### Rebase
 
