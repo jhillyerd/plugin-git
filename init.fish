@@ -34,6 +34,7 @@ abbr -a gdca       git diff --cached
 abbr -a gignore    git update-index --assume-unchanged
 abbr -a gf         git fetch
 abbr -a gfa        git fetch --all --prune
+abbr -a gfm        "git fetch origin master --prune; and git merge FETCH_HEAD"
 abbr -a gfo        git fetch origin
 abbr -a gl         git pull
 abbr -a glg        git log --stat --max-count=10
@@ -46,6 +47,8 @@ abbr -a gm         git merge
 abbr -a gmt        git mergetool --no-prompt
 abbr -a gp         git push
 abbr -a gp!        git push --force-with-lease
+abbr -a gpv        git push --no-verify
+abbr -a gpv!       git push --no-verify --force-with-lease
 abbr -a gr         git remote -vv
 abbr -a grb        git rebase
 abbr -a grba       git rebase --abort
