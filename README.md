@@ -160,6 +160,8 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gcp          | `git cherry-pick`                                           |
 | gd           | `git diff`                                                  |
 | gdca         | `git diff --cached`                                         |
+| gds          | `git diff --stat`                                           |
+| gdsc         | `git diff --stat --cached`                                  |
 | gdv          | pipe git diff to `view` command                             |
 | gignore      | `git update-index --assume-unchanged`                       |
 | gignored     | list temporarily ignored files                              |
