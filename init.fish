@@ -31,6 +31,8 @@ abbr -a gcount     git shortlog -sn
 abbr -a gcp        git cherry-pick
 abbr -a gd         git diff
 abbr -a gdca       git diff --cached
+abbr -a gds        git diff --stat
+abbr -a gdsc       git diff --stat --cached
 abbr -a gignore    git update-index --assume-unchanged
 abbr -a gf         git fetch
 abbr -a gfa        git fetch --all --prune
