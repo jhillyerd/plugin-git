@@ -103,6 +103,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gl           | `git pull`                                           |
 | ggl          | pull origin _current-branch_                         |
 | gup          | `git pull --rebase`                                  |
+| glr          | `git pull -r`                                        |
 | gp           | `git push`                                           |
 | gp!          | `git push --force-with-lease`                        |
 | gpv          | `git push --no-verify`                               |
