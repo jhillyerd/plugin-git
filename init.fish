@@ -11,6 +11,7 @@ abbr -a ga         git add
 abbr -a gaa        git add --all
 abbr -a gapa       git add --patch
 abbr -a gba        git branch -a -v
+abbr -a gban       git branch -a -v --no-merged
 abbr -a gb         git branch -vv
 abbr -a gbs        git bisect
 abbr -a gbsb       git bisect bad
