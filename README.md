@@ -93,6 +93,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | glo          | `git log --oneline --decorate --color`               |
 | gloo         | `git log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short` |
 | glog         | `git log --oneline --decorate --color --graph`       |
+| glom         | `git log --oneline --decorate --color master..`      |
 | glp          | git log at requested pretty level                    |
 | gwch         | `git whatchanged -p --abbrev-commit --pretty=medium` |
 
