@@ -35,6 +35,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | ------------ | ---------------------------------------------------- |
 | gb           | `git branch -vv`                                     |
 | gba          | `git branch -a -v`                                   |
+| gban         | `git branch -a -v --no-merged`                       |
 | gbda         | delete all branches merged in current HEAD           |
 | ggsup        | git set upstream to origin/_current-branch_          |
 
@@ -181,6 +182,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gsr          | `git svn rebase`                                            |
 | gss          | `git status -s`                                             |
 | gst          | `git status`                                                |
+| gsu          | `git submodule update`                                      |
 | gunignore    | `git update-index --no-assume-unchanged`                    |
 
 
