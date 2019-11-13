@@ -11,6 +11,7 @@ abbr -a ga         git add
 abbr -a gaa        git add --all
 abbr -a gapa       git add --patch
 abbr -a gba        git branch -a -v
+abbr -a gban       git branch -a -v --no-merged
 abbr -a gb         git branch -vv
 abbr -a gbs        git bisect
 abbr -a gbsb       git bisect bad
@@ -45,6 +46,7 @@ abbr -a glgg       git log --graph --max-count=10
 abbr -a glgga      git log --graph --decorate --all
 abbr -a glo        git log --oneline --decorate --color
 abbr -a glog       git log --oneline --decorate --color --graph
+abbr -a glom       git log --oneline --decorate --color master..
 abbr -a gloo       "git log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short"
 abbr -a gm         git merge
 abbr -a gmt        git mergetool --no-prompt
@@ -75,6 +77,7 @@ abbr -a gsta       git stash
 abbr -a gstd       git stash drop
 abbr -a gstp       git stash pop
 abbr -a gsts       git stash show --text
+abbr -a gsu        git submodule update
 abbr -a gunignore  git update-index --no-assume-unchanged
 abbr -a gup        git pull --rebase
 abbr -a gwch       git whatchanged -p --abbrev-commit --pretty=medium
