@@ -65,7 +65,9 @@ abbr -a grh        git reset HEAD
 abbr -a grhh       git reset HEAD --hard
 abbr -a grmv       git remote rename
 abbr -a grrm       git remote remove
+abbr -a grs        git restore
 abbr -a grset      git remote set-url
+abbr -a grss       git restore --source
 abbr -a grup       git remote update
 abbr -a grv        git remote -v
 abbr -a gsh        git show
@@ -78,6 +80,8 @@ abbr -a gstd       git stash drop
 abbr -a gstp       git stash pop
 abbr -a gsts       git stash show --text
 abbr -a gsu        git submodule update
+abbr -a gsw        git switch
+abbr -a gswc       git switch --create
 abbr -a gunignore  git update-index --no-assume-unchanged
 abbr -a gup        git pull --rebase
 abbr -a gwch       git whatchanged -p --abbrev-commit --pretty=medium
