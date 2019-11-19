@@ -177,7 +177,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | grh          | `git reset HEAD`                                            |
 | grhh         | `git reset HEAD --hard`                                     |
 | grs          | `git restore`                                               |
-| grss         | `git restore --source`                                               |
+| grss         | `git restore --source`                                      |
 | grt          | cd into the top of the current repository or submodule      |
 | gsh          | `git show`                                                  |
 | gsd          | `git svn dcommit`                                           |
