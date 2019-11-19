@@ -81,7 +81,7 @@ abbr -a gstp       git stash pop
 abbr -a gsts       git stash show --text
 abbr -a gsu        git submodule update
 abbr -a gsw        git switch
-abbr -a gswc       git switch -c
+abbr -a gswc       git switch --create
 abbr -a gunignore  git update-index --no-assume-unchanged
 abbr -a gup        git pull --rebase
 abbr -a gwch       git whatchanged -p --abbrev-commit --pretty=medium

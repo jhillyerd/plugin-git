@@ -186,7 +186,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gst          | `git status`                                                |
 | gsu          | `git submodule update`                                      |
 | gsw          | `git switch`                                                |
-| gswc         | `git switch -c`                                             |
+| gswc         | `git switch --create`                                       |
 | gunignore    | `git update-index --no-assume-unchanged`                    |
 
 
