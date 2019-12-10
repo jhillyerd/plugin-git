@@ -24,6 +24,9 @@ abbr -a gcn!       git commit -v --no-edit --amend
 abbr -a gca        git commit -v -a
 abbr -a gca!       git commit -v -a --amend
 abbr -a gcan!      git commit -v -a --no-edit --amend
+abbr -a gcv        git commit -v --no-verify
+abbr -a gcav       git commit -a -v --no-verify
+abbr -a gcav!      git commit -a -v --no-verify --amend
 abbr -a gcm        git commit -m
 abbr -a gcam       git commit -a -m
 abbr -a gscam      git commit -S -a -m
