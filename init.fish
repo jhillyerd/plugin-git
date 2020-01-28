@@ -50,6 +50,7 @@ abbr -a glgga      git log --graph --decorate --all
 abbr -a glo        git log --oneline --decorate --color
 abbr -a glog       git log --oneline --decorate --color --graph
 abbr -a glom       git log --oneline --decorate --color master..
+abbr -a glod       git log --oneline --decorate --color develop..
 abbr -a gloo       "git log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short"
 abbr -a gm         git merge
 abbr -a gmt        git mergetool --no-prompt
@@ -63,6 +64,7 @@ abbr -a grba       git rebase --abort
 abbr -a grbc       git rebase --continue
 abbr -a grbi       git rebase --interactive
 abbr -a grbm       git rebase master
+abbr -a grbd       git rebase develop
 abbr -a grbs       git rebase --skip
 abbr -a grh        git reset HEAD
 abbr -a grhh       git reset HEAD --hard
@@ -83,6 +85,8 @@ abbr -a gstd       git stash drop
 abbr -a gstp       git stash pop
 abbr -a gsts       git stash show --text
 abbr -a gsu        git submodule update
+abbr -a gsur       git submodule update --recursive
+abbr -a gsuri      git submodule update --recursive --init
 abbr -a gsw        git switch
 abbr -a gswc       git switch --create
 abbr -a gunignore  git update-index --no-assume-unchanged
