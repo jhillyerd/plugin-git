@@ -64,7 +64,11 @@ abbr -a grba       git rebase --abort
 abbr -a grbc       git rebase --continue
 abbr -a grbi       git rebase --interactive
 abbr -a grbm       git rebase master
+abbr -a grbmi      git rebase master --interactive
+abbr -a grbmia     git rebase master --interactive --autosquash
 abbr -a grbd       git rebase develop
+abbr -a grbdi      git rebase master --interactive
+abbr -a grbdia     git rebase master --interactive --autosquash
 abbr -a grbs       git rebase --skip
 abbr -a grh        git reset HEAD
 abbr -a grhh       git reset HEAD --hard

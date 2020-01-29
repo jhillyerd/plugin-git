@@ -128,7 +128,11 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | grbc         | `git rebase --continue`                              |
 | grbi         | `git rebase --interactive`                           |
 | grbm         | `git rebase master`                                  |
+| grbmi        | `git rebase master --interactive`                    |
+| grbmia       | `git rebase master --interactive --autosquash`       |
 | grbd         | `git rebase develop`                                 |
+| grbdd        | `git rebase develop --interactive`                   |
+| grbdia       | `git rebase develop --interactive --autosquash`       |
 | grbs         | `git rebase --skip`                                  |
 | ggu          | fetch & rebase _current-branch_ on top of the upstream branch |
 
