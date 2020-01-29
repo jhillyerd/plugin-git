@@ -98,6 +98,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gloo         | `git log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short` |
 | glog         | `git log --oneline --decorate --color --graph`       |
 | glom         | `git log --oneline --decorate --color master..`      |
+| glod         | `git log --oneline --decorate --color develop..`     |
 | glp          | git log at requested pretty level                    |
 | gwch         | `git whatchanged -p --abbrev-commit --pretty=medium` |
 
@@ -127,6 +128,11 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | grbc         | `git rebase --continue`                              |
 | grbi         | `git rebase --interactive`                           |
 | grbm         | `git rebase master`                                  |
+| grbmi        | `git rebase master --interactive`                    |
+| grbmia       | `git rebase master --interactive --autosquash`       |
+| grbd         | `git rebase develop`                                 |
+| grbdd        | `git rebase develop --interactive`                   |
+| grbdia       | `git rebase develop --interactive --autosquash`       |
 | grbs         | `git rebase --skip`                                  |
 | ggu          | fetch & rebase _current-branch_ on top of the upstream branch |
 
@@ -188,6 +194,8 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gss          | `git status -s`                                             |
 | gst          | `git status`                                                |
 | gsu          | `git submodule update`                                      |
+| gsur         | `git submodule update --recursive`                          |
+| gsuri        | `git submodule update --recursive --init`                   |
 | gsw          | `git switch`                                                |
 | gswc         | `git switch --create`                                       |
 | gunignore    | `git update-index --no-assume-unchanged`                    |
