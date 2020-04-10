@@ -5,6 +5,8 @@
 # * $path          package path
 # * $dependencies  package dependencies
 
+set -q __git_plugin_initialized; and exit 0
+
 # git abbreviations
 abbr -a g          git
 abbr -a ga         git add
@@ -123,3 +125,7 @@ abbr -a gfht       git flow hotfix track
 abbr -a gfst       git flow support track
 
 abbr -a gfp        git flow publish
+
+# Mark git plugin as initialized
+set -Ux __git_plugin_initialized (date)
+set -Ux __git_plugin_abbreviations (cat (status -f) | grep '^abbr\s\+-a\s\+\S\+' | awk '{print $3}')
