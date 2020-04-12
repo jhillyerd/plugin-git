@@ -5,121 +5,128 @@
 # * $path          package path
 # * $dependencies  package dependencies
 
+set -q __git_plugin_initialized; and exit 0
+
+set -U __git_plugin_abbreviations
+
 # git abbreviations
-abbr -a g          git
-abbr -a ga         git add
-abbr -a gaa        git add --all
-abbr -a gapa       git add --patch
-abbr -a gba        git branch -a -v
-abbr -a gban       git branch -a -v --no-merged
-abbr -a gb         git branch -vv
-abbr -a gbs        git bisect
-abbr -a gbsb       git bisect bad
-abbr -a gbsg       git bisect good
-abbr -a gbsr       git bisect reset
-abbr -a gbss       git bisect start
-abbr -a gc         git commit -v
-abbr -a gc!        git commit -v --amend
-abbr -a gcn!       git commit -v --no-edit --amend
-abbr -a gca        git commit -v -a
-abbr -a gca!       git commit -v -a --amend
-abbr -a gcan!      git commit -v -a --no-edit --amend
-abbr -a gcv        git commit -v --no-verify
-abbr -a gcav       git commit -a -v --no-verify
-abbr -a gcav!      git commit -a -v --no-verify --amend
-abbr -a gcm        git commit -m
-abbr -a gcam       git commit -a -m
-abbr -a gscam      git commit -S -a -m
-abbr -a gcl        git clone
-abbr -a gcount     git shortlog -sn
-abbr -a gcp        git cherry-pick
-abbr -a gd         git diff
-abbr -a gdca       git diff --cached
-abbr -a gds        git diff --stat
-abbr -a gdsc       git diff --stat --cached
-abbr -a gignore    git update-index --assume-unchanged
-abbr -a gf         git fetch
-abbr -a gfa        git fetch --all --prune
-abbr -a gfm        "git fetch origin master --prune; and git merge FETCH_HEAD"
-abbr -a gfo        git fetch origin
-abbr -a gl         git pull
-abbr -a glr        git pull --rebase
-abbr -a glg        git log --stat --max-count=10
-abbr -a glgg       git log --graph --max-count=10
-abbr -a glgga      git log --graph --decorate --all
-abbr -a glo        git log --oneline --decorate --color
-abbr -a glog       git log --oneline --decorate --color --graph
-abbr -a glom       git log --oneline --decorate --color master..
-abbr -a glod       git log --oneline --decorate --color develop..
-abbr -a gloo       "git log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short"
-abbr -a gm         git merge
-abbr -a gmt        git mergetool --no-prompt
-abbr -a gp         git push
-abbr -a gp!        git push --force-with-lease
-abbr -a gpv        git push --no-verify
-abbr -a gpv!       git push --no-verify --force-with-lease
-abbr -a gr         git remote -vv
-abbr -a grb        git rebase
-abbr -a grba       git rebase --abort
-abbr -a grbc       git rebase --continue
-abbr -a grbi       git rebase --interactive
-abbr -a grbm       git rebase master
-abbr -a grbmi      git rebase master --interactive
-abbr -a grbmia     git rebase master --interactive --autosquash
-abbr -a grbd       git rebase develop
-abbr -a grbdi      git rebase master --interactive
-abbr -a grbdia     git rebase master --interactive --autosquash
-abbr -a grbs       git rebase --skip
-abbr -a grh        git reset HEAD
-abbr -a grhh       git reset HEAD --hard
-abbr -a grmv       git remote rename
-abbr -a grrm       git remote remove
-abbr -a grs        git restore
-abbr -a grset      git remote set-url
-abbr -a grss       git restore --source
-abbr -a grup       git remote update
-abbr -a grv        git remote -v
-abbr -a gsh        git show
-abbr -a gsd        git svn dcommit
-abbr -a gsr        git svn rebase
-abbr -a gss        git status -s
-abbr -a gst        git status
-abbr -a gsta       git stash
-abbr -a gstd       git stash drop
-abbr -a gstp       git stash pop
-abbr -a gsts       git stash show --text
-abbr -a gsu        git submodule update
-abbr -a gsur       git submodule update --recursive
-abbr -a gsuri      git submodule update --recursive --init
-abbr -a gsw        git switch
-abbr -a gswc       git switch --create
-abbr -a gunignore  git update-index --no-assume-unchanged
-abbr -a gup        git pull --rebase
-abbr -a gwch       git whatchanged -p --abbrev-commit --pretty=medium
+__git.plugin_abbr g          git
+__git.plugin_abbr ga         git add
+__git.plugin_abbr gaa        git add --all
+__git.plugin_abbr gapa       git add --patch
+__git.plugin_abbr gba        git branch -a -v
+__git.plugin_abbr gban       git branch -a -v --no-merged
+__git.plugin_abbr gb         git branch -vv
+__git.plugin_abbr gbs        git bisect
+__git.plugin_abbr gbsb       git bisect bad
+__git.plugin_abbr gbsg       git bisect good
+__git.plugin_abbr gbsr       git bisect reset
+__git.plugin_abbr gbss       git bisect start
+__git.plugin_abbr gc         git commit -v
+__git.plugin_abbr gc!        git commit -v --amend
+__git.plugin_abbr gcn!       git commit -v --no-edit --amend
+__git.plugin_abbr gca        git commit -v -a
+__git.plugin_abbr gca!       git commit -v -a --amend
+__git.plugin_abbr gcan!      git commit -v -a --no-edit --amend
+__git.plugin_abbr gcv        git commit -v --no-verify
+__git.plugin_abbr gcav       git commit -a -v --no-verify
+__git.plugin_abbr gcav!      git commit -a -v --no-verify --amend
+__git.plugin_abbr gcm        git commit -m
+__git.plugin_abbr gcam       git commit -a -m
+__git.plugin_abbr gscam      git commit -S -a -m
+__git.plugin_abbr gcl        git clone
+__git.plugin_abbr gcount     git shortlog -sn
+__git.plugin_abbr gcp        git cherry-pick
+__git.plugin_abbr gd         git diff
+__git.plugin_abbr gdca       git diff --cached
+__git.plugin_abbr gds        git diff --stat
+__git.plugin_abbr gdsc       git diff --stat --cached
+__git.plugin_abbr gignore    git update-index --assume-unchanged
+__git.plugin_abbr gf         git fetch
+__git.plugin_abbr gfa        git fetch --all --prune
+__git.plugin_abbr gfm        "git fetch origin master --prune; and git merge FETCH_HEAD"
+__git.plugin_abbr gfo        git fetch origin
+__git.plugin_abbr gl         git pull
+__git.plugin_abbr glr        git pull --rebase
+__git.plugin_abbr glg        git log --stat --max-count=10
+__git.plugin_abbr glgg       git log --graph --max-count=10
+__git.plugin_abbr glgga      git log --graph --decorate --all
+__git.plugin_abbr glo        git log --oneline --decorate --color
+__git.plugin_abbr glog       git log --oneline --decorate --color --graph
+__git.plugin_abbr glom       git log --oneline --decorate --color master..
+__git.plugin_abbr glod       git log --oneline --decorate --color develop..
+__git.plugin_abbr gloo       "git log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short"
+__git.plugin_abbr gm         git merge
+__git.plugin_abbr gmt        git mergetool --no-prompt
+__git.plugin_abbr gp         git push
+__git.plugin_abbr gp!        git push --force-with-lease
+__git.plugin_abbr gpv        git push --no-verify
+__git.plugin_abbr gpv!       git push --no-verify --force-with-lease
+__git.plugin_abbr gr         git remote -vv
+__git.plugin_abbr grb        git rebase
+__git.plugin_abbr grba       git rebase --abort
+__git.plugin_abbr grbc       git rebase --continue
+__git.plugin_abbr grbi       git rebase --interactive
+__git.plugin_abbr grbm       git rebase master
+__git.plugin_abbr grbmi      git rebase master --interactive
+__git.plugin_abbr grbmia     git rebase master --interactive --autosquash
+__git.plugin_abbr grbd       git rebase develop
+__git.plugin_abbr grbdi      git rebase master --interactive
+__git.plugin_abbr grbdia     git rebase master --interactive --autosquash
+__git.plugin_abbr grbs       git rebase --skip
+__git.plugin_abbr grh        git reset HEAD
+__git.plugin_abbr grhh       git reset HEAD --hard
+__git.plugin_abbr grmv       git remote rename
+__git.plugin_abbr grrm       git remote remove
+__git.plugin_abbr grs        git restore
+__git.plugin_abbr grset      git remote set-url
+__git.plugin_abbr grss       git restore --source
+__git.plugin_abbr grup       git remote update
+__git.plugin_abbr grv        git remote -v
+__git.plugin_abbr gsh        git show
+__git.plugin_abbr gsd        git svn dcommit
+__git.plugin_abbr gsr        git svn rebase
+__git.plugin_abbr gss        git status -s
+__git.plugin_abbr gst        git status
+__git.plugin_abbr gsta       git stash
+__git.plugin_abbr gstd       git stash drop
+__git.plugin_abbr gstp       git stash pop
+__git.plugin_abbr gsts       git stash show --text
+__git.plugin_abbr gsu        git submodule update
+__git.plugin_abbr gsur       git submodule update --recursive
+__git.plugin_abbr gsuri      git submodule update --recursive --init
+__git.plugin_abbr gsw        git switch
+__git.plugin_abbr gswc       git switch --create
+__git.plugin_abbr gunignore  git update-index --no-assume-unchanged
+__git.plugin_abbr gup        git pull --rebase
+__git.plugin_abbr gwch       git whatchanged -p --abbrev-commit --pretty=medium
 
 # git checkout abbreviations
-abbr -a gco        git checkout
-abbr -a gcb        git checkout -b
-abbr -a gcod       git checkout develop
-abbr -a gcom       git checkout master
+__git.plugin_abbr gco        git checkout
+__git.plugin_abbr gcb        git checkout -b
+__git.plugin_abbr gcod       git checkout develop
+__git.plugin_abbr gcom       git checkout master
 
 # git flow abbreviations
-abbr -a gfb        git flow bugfix
-abbr -a gff        git flow feature
-abbr -a gfr        git flow release
-abbr -a gfh        git flow hotfix
-abbr -a gfs        git flow support
+__git.plugin_abbr gfb        git flow bugfix
+__git.plugin_abbr gff        git flow feature
+__git.plugin_abbr gfr        git flow release
+__git.plugin_abbr gfh        git flow hotfix
+__git.plugin_abbr gfs        git flow support
 
-abbr -a gfbs       git flow bugfix start
-abbr -a gffs       git flow feature start
-abbr -a gfrs       git flow release start
-abbr -a gfhs       git flow hotfix start
-abbr -a gfss       git flow support start
+__git.plugin_abbr gfbs       git flow bugfix start
+__git.plugin_abbr gffs       git flow feature start
+__git.plugin_abbr gfrs       git flow release start
+__git.plugin_abbr gfhs       git flow hotfix start
+__git.plugin_abbr gfss       git flow support start
 
-abbr -a gfbt       git flow bugfix track
-abbr -a gfft       git flow feature track
-abbr -a gfrt       git flow release track
-abbr -a gfht       git flow hotfix track
-abbr -a gfst       git flow support track
+__git.plugin_abbr gfbt       git flow bugfix track
+__git.plugin_abbr gfft       git flow feature track
+__git.plugin_abbr gfrt       git flow release track
+__git.plugin_abbr gfht       git flow hotfix track
+__git.plugin_abbr gfst       git flow support track
 
-abbr -a gfp        git flow publish
+__git.plugin_abbr gfp        git flow publish
+
+# Mark git plugin as initialized
+set -U __git_plugin_initialized (date)
