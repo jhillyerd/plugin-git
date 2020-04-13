@@ -38,6 +38,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gban         | `git branch -a -v --no-merged`                       |
 | gbda         | delete all branches merged in current HEAD           |
 | ggsup        | git set upstream to origin/_current-branch_          |
+| grename      | Rename _old_ branch to _new_, including in origin remote |
 
 ### Checkout
 
