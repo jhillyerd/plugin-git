@@ -1,7 +1,5 @@
-function glp -d "git log at requested pretty level"
-  if test (count $argv) -gt 0
-    git log --pretty=$argv[1]
-  end
+function glp -d "git log at requested pretty level" -a format
+  set -q format[1]; and git log --pretty=$format
 end
 
 complete -c glp -x -a "(complete -C 'git log --pretty=' | sed 's/^--pretty=//')"
