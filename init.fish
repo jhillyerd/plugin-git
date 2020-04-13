@@ -23,6 +23,8 @@ __git_abbr gaa        git add --all
 __git_abbr gapa       git add --patch
 __git_abbr gba        git branch -a -v
 __git_abbr gban       git branch -a -v --no-merged
+__git_abbr gbd        git branch -d
+__git_abbr gbD        git branch -D
 __git_abbr gb         git branch -vv
 __git_abbr gbs        git bisect
 __git_abbr gbsb       git bisect bad
