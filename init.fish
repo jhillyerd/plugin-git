@@ -9,6 +9,13 @@ set -q __git_plugin_initialized; and exit 0
 
 set -U __git_plugin_abbreviations
 
+function __git.plugin_abbr -d "Create Git plugin abbreviation"
+  set -l name $argv[1]
+  set -l body $argv[2..-1]
+  abbr -a $name $body
+  set __git_plugin_abbreviations $__git_plugin_abbreviations $name
+end
+
 # git abbreviations
 __git.plugin_abbr g          git
 __git.plugin_abbr ga         git add
@@ -127,6 +134,9 @@ __git.plugin_abbr gfht       git flow hotfix track
 __git.plugin_abbr gfst       git flow support track
 
 __git.plugin_abbr gfp        git flow publish
+
+# Cleanup declared functions
+functions -e __git.plugin_abbr
 
 # Mark git plugin as initialized
 set -U __git_plugin_initialized (date)
