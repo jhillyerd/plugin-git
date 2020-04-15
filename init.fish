@@ -48,6 +48,8 @@ __git_abbr gscam      git commit -S -a -m
 __git_abbr gcl        git clone
 __git_abbr gcount     git shortlog -sn
 __git_abbr gcp        git cherry-pick
+__git_abbr gcpa       git cherry-pick --abort
+__git_abbr gcpc       git cherry-pick --continue
 __git_abbr gd         git diff
 __git_abbr gdca       git diff --cached
 __git_abbr gds        git diff --stat

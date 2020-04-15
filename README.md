@@ -199,6 +199,8 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gcl          | `git clone`                                                 |
 | gclean       | pristine working directory: reset and force clean           |
 | gcp          | `git cherry-pick`                                           |
+| gcpa         | `git cherry-pick --abort`                                   |
+| gcpc         | `git cherry-pick --continue`                                |
 | gignore      | `git update-index --assume-unchanged`                       |
 | gignored     | list temporarily ignored files                              |
 | gf           | `git fetch`                                                 |
