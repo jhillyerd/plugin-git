@@ -197,6 +197,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gfo          | `git fetch origin`                                          |
 | gm           | `git merge`                                                 |
 | gmt          | `git mergetool --no-prompt`                                 |
+| grev         | `git revert`                                                |
 | grh          | `git reset HEAD`                                            |
 | grhh         | `git reset HEAD --hard`                                     |
 | grt          | cd into the top of the current repository or submodule      |

@@ -84,6 +84,7 @@ __git_abbr grbd       git rebase develop
 __git_abbr grbdi      git rebase master --interactive
 __git_abbr grbdia     git rebase master --interactive --autosquash
 __git_abbr grbs       git rebase --skip
+__git_abbr grev       git revert
 __git_abbr grh        git reset HEAD
 __git_abbr grhh       git reset HEAD --hard
 __git_abbr grm        git rm
