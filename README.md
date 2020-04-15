@@ -76,6 +76,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gdca         | `git diff --cached`                                  |
 | gds          | `git diff --stat`                                    |
 | gdsc         | `git diff --stat --cached`                           |
+| gdt          | list changed files                                   |
 | gdw          | `git diff --word-diff`                               |
 | gdwc         | `git diff --word-diff --cached`                      |
 | gdv          | pipe `git diff` to `view` command                    |
