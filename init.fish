@@ -73,6 +73,7 @@ __git_abbr gp!        git push --force-with-lease
 __git_abbr gpv        git push --no-verify
 __git_abbr gpv!       git push --no-verify --force-with-lease
 __git_abbr gr         git remote -vv
+__git_abbr gra        git remote add
 __git_abbr grb        git rebase
 __git_abbr grba       git rebase --abort
 __git_abbr grbc       git rebase --continue

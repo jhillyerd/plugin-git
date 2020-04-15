@@ -144,6 +144,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | Abbreviation | Command                                              |
 | ------------ | ---------------------------------------------------- |
 | gr           | `git remote -vv`                                     |
+| gra          | `git remote add`                                     |
 | grmv         | `git remote rename`                                  |
 | grrm         | `git remote remove`                                  |
 | grset        | `git remote set-url`                                 |
