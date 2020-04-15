@@ -40,7 +40,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gbD          | `git branch -D`                                      |
 | gbda         | delete all branches merged in current HEAD           |
 | ggsup        | git set upstream to origin/_current-branch_          |
-| grename      | Rename _old_ branch to _new_, including in origin remote |
+| grename      | rename _old_ branch to _new_, including in origin remote |
 
 ### Checkout
 
@@ -67,6 +67,18 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gcm          | `git commit -m`                                      |
 | gcam         | `git commit -a -m`                                   |
 | gscam        | `git commit -S -a -m`                                |
+
+### Diff
+
+| Abbreviation | Command                                              |
+| ------------ | ---------------------------------------------------- |
+| gd           | `git diff`                                           |
+| gdca         | `git diff --cached`                                  |
+| gds          | `git diff --stat`                                    |
+| gdsc         | `git diff --stat --cached`                           |
+| gdw          | `git diff --word-diff`                               |
+| gdwc         | `git diff --word-diff --cached`                      |
+| gdv          | pipe `git diff` to `view` command                    |
 
 ### Flow
 
@@ -102,7 +114,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | glog         | `git log --oneline --decorate --color --graph`       |
 | glom         | `git log --oneline --decorate --color master..`      |
 | glod         | `git log --oneline --decorate --color develop..`     |
-| glp          | git log at requested pretty level                    |
+| glp          | `git log` at requested pretty level                  |
 | gwch         | `git whatchanged -p --abbrev-commit --pretty=medium` |
 
 ### Push & Pull
@@ -120,7 +132,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | ggp          | push origin _current-branch_                         |
 | gpoat        | push all + tags to origin                            |
 | ggpnp        | pull & push origin _current-branch_                  |
-| gpu          | git push --set-upsteam origin _current-branch_       |
+| gpu          | push --set-upsteam origin _current-branch_           |
 
 ### Rebase
 
@@ -185,11 +197,6 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gcl          | `git clone`                                                 |
 | gclean       | pristine working directory: reset and force clean           |
 | gcp          | `git cherry-pick`                                           |
-| gd           | `git diff`                                                  |
-| gdca         | `git diff --cached`                                         |
-| gds          | `git diff --stat`                                           |
-| gdsc         | `git diff --stat --cached`                                  |
-| gdv          | pipe git diff to `view` command                             |
 | gignore      | `git update-index --assume-unchanged`                       |
 | gignored     | list temporarily ignored files                              |
 | gf           | `git fetch`                                                 |

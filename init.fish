@@ -51,6 +51,8 @@ __git_abbr gd         git diff
 __git_abbr gdca       git diff --cached
 __git_abbr gds        git diff --stat
 __git_abbr gdsc       git diff --stat --cached
+__git_abbr gdw        git diff --word-diff
+__git_abbr gdwc       git diff --word-diff --cached
 __git_abbr gignore    git update-index --assume-unchanged
 __git_abbr gf         git fetch
 __git_abbr gfa        git fetch --all --prune
