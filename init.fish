@@ -114,6 +114,8 @@ __git_abbr gsts       git stash show --text
 __git_abbr gsu        git submodule update
 __git_abbr gsur       git submodule update --recursive
 __git_abbr gsuri      git submodule update --recursive --init
+__git_abbr gts        git tag -s
+__git_abbr gtv        git tag | sort -V
 __git_abbr gsw        git switch
 __git_abbr gswc       git switch --create
 __git_abbr gunignore  git update-index --no-assume-unchanged

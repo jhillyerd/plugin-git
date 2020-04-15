@@ -175,6 +175,15 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gwip         | commit a work-in-progress branch                     |
 | gunwip       | uncommit the work-in-progress branch                 |
 
+### Tags
+
+| Abbreviation | Command                                              |
+| ------------ | ---------------------------------------------------- |
+| gts          | `git tag -s`                                         |
+| gtv          | `git tag | sort -V`                                  |
+| gtl          | list tags matching prefix                            |
+
+
 ### Files
 
 | Abbreviation | Command                                              |
