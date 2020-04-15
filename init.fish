@@ -21,6 +21,7 @@ __git_abbr g          git
 __git_abbr ga         git add
 __git_abbr gaa        git add --all
 __git_abbr gapa       git add --patch
+__git_abbr gap        git apply
 __git_abbr gba        git branch -a -v
 __git_abbr gban       git branch -a -v --no-merged
 __git_abbr gbd        git branch -d

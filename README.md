@@ -56,11 +56,11 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | Abbreviation | Command                                              |
 | ------------ | ---------------------------------------------------- |
 | gc           | `git commit -v`                                      |
-| `gc!`        | `git commit -v --amend`                              |
-| `gcn!`       | `git commit -v --no-edit --amend`                    |
+| gc!          | `git commit -v --amend`                              |
+| gcn!         | `git commit -v --no-edit --amend`                    |
 | gca          | `git commit -v -a`                                   |
-| `gca!`       | `git commit -v -a --amend`                           |
-| `gcan!`      | `git commit -v -a --no-edit --amend`                 |
+| gca!         | `git commit -v -a --amend`                           |
+| gcan!        | `git commit -v -a --no-edit --amend`                 |
 | gcv          | `git commit -v --no-verify`                          |
 | gcav         | `git commit -a -v --no-verify`                       |
 | gcav!        | `git commit -a -v --no-verify --amend`               |
@@ -169,6 +169,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | ga           | `git add`                                                   |
 | gaa          | `git add --all`                                             |
 | gapa         | `git add --patch`                                           |
+| gap          | `git apply`                                                 |
 | gcf          | list git configuration                                      |
 | gcl          | `git clone`                                                 |
 | gclean       | pristine working directory: reset and force clean           |
