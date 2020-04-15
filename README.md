@@ -128,12 +128,15 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | glr          | `git pull --rebase`                                  |
 | gp           | `git push`                                           |
 | gp!          | `git push --force-with-lease`                        |
+| gpo          | `git push origin`                                    |
+| gpo!         | `git push --force-with-lease origin`                 |
 | gpv          | `git push --no-verify`                               |
 | gpv!         | `git push --no-verify --force-with-lease`            |
 | ggp          | push origin _current-branch_                         |
+| ggp!         | `ggp --force-with-lease`                             |
+| gpu          | `ggp --set-upstream`                                 |
 | gpoat        | push all + tags to origin                            |
 | ggpnp        | pull & push origin _current-branch_                  |
-| gpu          | push --set-upsteam origin _current-branch_           |
 
 ### Rebase
 
@@ -184,7 +187,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gtl          | list tags matching prefix                            |
 
 
-### Files
+### Local Files
 
 | Abbreviation | Command                                              |
 | ------------ | ---------------------------------------------------- |

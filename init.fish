@@ -62,6 +62,7 @@ __git_abbr gfa        git fetch --all --prune
 __git_abbr gfm        "git fetch origin master --prune; and git merge FETCH_HEAD"
 __git_abbr gfo        git fetch origin
 __git_abbr gl         git pull
+__git_abbr gll        git pull origin
 __git_abbr glr        git pull --rebase
 __git_abbr glg        git log --stat --max-count=10
 __git_abbr glgg       git log --graph --max-count=10
@@ -75,8 +76,12 @@ __git_abbr gm         git merge
 __git_abbr gmt        git mergetool --no-prompt
 __git_abbr gp         git push
 __git_abbr gp!        git push --force-with-lease
+__git_abbr gpo        git push origin
+__git_abbr gpo!       git push --force-with-lease origin
 __git_abbr gpv        git push --no-verify
 __git_abbr gpv!       git push --no-verify --force-with-lease
+__git_abbr ggp!       ggp --force-with-lease
+__git_abbr gpu        ggp --set-upstream
 __git_abbr gr         git remote -vv
 __git_abbr gra        git remote add
 __git_abbr grb        git rebase
