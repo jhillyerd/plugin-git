@@ -86,6 +86,8 @@ __git_abbr grbdia     git rebase master --interactive --autosquash
 __git_abbr grbs       git rebase --skip
 __git_abbr grh        git reset HEAD
 __git_abbr grhh       git reset HEAD --hard
+__git_abbr grm        git rm
+__git_abbr grmc       git rm --cached
 __git_abbr grmv       git remote rename
 __git_abbr grrm       git remote remove
 __git_abbr grs        git restore

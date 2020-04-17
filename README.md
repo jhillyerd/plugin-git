@@ -161,14 +161,24 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gwip         | commit a work-in-progress branch                     |
 | gunwip       | uncommit the work-in-progress branch                 |
 
+### Files
+
+| Abbreviation | Command                                              |
+| ------------ | ---------------------------------------------------- |
+| ga           | `git add`                                            |
+| gaa          | `git add --all`                                      |
+| gapa         | `git add --patch`                                    |
+| grm          | `git rm`                                             |
+| grmc         | `git rm --cached`                                    |
+| grs          | `git restore`                                        |
+| grss         | `git restore --source`                               |
+
+
 ### Everything Else
 
 | Abbreviation | Command                                                     |
 | ------------ | --------------------------------------------------------    |
 | g            | `git`                                                       |
-| ga           | `git add`                                                   |
-| gaa          | `git add --all`                                             |
-| gapa         | `git add --patch`                                           |
 | gap          | `git apply`                                                 |
 | gcf          | list git configuration                                      |
 | gcl          | `git clone`                                                 |
@@ -189,8 +199,6 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gmt          | `git mergetool --no-prompt`                                 |
 | grh          | `git reset HEAD`                                            |
 | grhh         | `git reset HEAD --hard`                                     |
-| grs          | `git restore`                                               |
-| grss         | `git restore --source`                                      |
 | grt          | cd into the top of the current repository or submodule      |
 | gsh          | `git show`                                                  |
 | gsd          | `git svn dcommit`                                           |
