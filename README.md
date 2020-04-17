@@ -194,7 +194,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | ------------ | --------------------------------------------------------    |
 | g            | `git`                                                       |
 | gap          | `git apply`                                                 |
-| gcf          | list git configuration                                      |
+| gcf          | `git config --list`                                         |
 | gcl          | `git clone`                                                 |
 | gclean       | pristine working directory: reset and force clean           |
 | gcp          | `git cherry-pick`                                           |
