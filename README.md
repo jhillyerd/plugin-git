@@ -36,8 +36,11 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gb           | `git branch -vv`                                     |
 | gba          | `git branch -a -v`                                   |
 | gban         | `git branch -a -v --no-merged`                       |
+| gbd          | `git branch -d`                                      |
+| gbD          | `git branch -D`                                      |
 | gbda         | delete all branches merged in current HEAD           |
 | ggsup        | git set upstream to origin/_current-branch_          |
+| grename      | rename _old_ branch to _new_, including in origin remote |
 
 ### Checkout
 
@@ -53,17 +56,30 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | Abbreviation | Command                                              |
 | ------------ | ---------------------------------------------------- |
 | gc           | `git commit -v`                                      |
-| `gc!`        | `git commit -v --amend`                              |
-| `gcn!`       | `git commit -v --no-edit --amend`                    |
+| gc!          | `git commit -v --amend`                              |
+| gcn!         | `git commit -v --no-edit --amend`                    |
 | gca          | `git commit -v -a`                                   |
-| `gca!`       | `git commit -v -a --amend`                           |
-| `gcan!`      | `git commit -v -a --no-edit --amend`                 |
+| gca!         | `git commit -v -a --amend`                           |
+| gcan!        | `git commit -v -a --no-edit --amend`                 |
 | gcv          | `git commit -v --no-verify`                          |
 | gcav         | `git commit -a -v --no-verify`                       |
 | gcav!        | `git commit -a -v --no-verify --amend`               |
 | gcm          | `git commit -m`                                      |
 | gcam         | `git commit -a -m`                                   |
 | gscam        | `git commit -S -a -m`                                |
+
+### Diff
+
+| Abbreviation | Command                                              |
+| ------------ | ---------------------------------------------------- |
+| gd           | `git diff`                                           |
+| gdca         | `git diff --cached`                                  |
+| gds          | `git diff --stat`                                    |
+| gdsc         | `git diff --stat --cached`                           |
+| gdt          | list changed files                                   |
+| gdw          | `git diff --word-diff`                               |
+| gdwc         | `git diff --word-diff --cached`                      |
+| gdv          | pipe `git diff` to `view` command                    |
 
 ### Flow
 
@@ -99,7 +115,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | glog         | `git log --oneline --decorate --color --graph`       |
 | glom         | `git log --oneline --decorate --color master..`      |
 | glod         | `git log --oneline --decorate --color develop..`     |
-| glp          | git log at requested pretty level                    |
+| glp          | `git log` at requested pretty level                  |
 | gwch         | `git whatchanged -p --abbrev-commit --pretty=medium` |
 
 ### Push & Pull
@@ -112,12 +128,15 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | glr          | `git pull --rebase`                                  |
 | gp           | `git push`                                           |
 | gp!          | `git push --force-with-lease`                        |
+| gpo          | `git push origin`                                    |
+| gpo!         | `git push --force-with-lease origin`                 |
 | gpv          | `git push --no-verify`                               |
 | gpv!         | `git push --no-verify --force-with-lease`            |
 | ggp          | push origin _current-branch_                         |
+| ggp!         | `ggp --force-with-lease`                             |
+| gpu          | `ggp --set-upstream`                                 |
 | gpoat        | push all + tags to origin                            |
 | ggpnp        | pull & push origin _current-branch_                  |
-| gpu          | git push --set-upsteam origin _current-branch_       |
 
 ### Rebase
 
@@ -141,6 +160,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | Abbreviation | Command                                              |
 | ------------ | ---------------------------------------------------- |
 | gr           | `git remote -vv`                                     |
+| gra          | `git remote add`                                     |
 | grmv         | `git remote rename`                                  |
 | grrm         | `git remote remove`                                  |
 | grset        | `git remote set-url`                                 |
@@ -158,23 +178,41 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gwip         | commit a work-in-progress branch                     |
 | gunwip       | uncommit the work-in-progress branch                 |
 
+### Tags
+
+| Abbreviation | Command                                              |
+| ------------ | ---------------------------------------------------- |
+| gts          | `git tag -s`                                         |
+| gtv          | `git tag | sort -V`                                  |
+| gtl          | list tags matching prefix                            |
+
+
+### Local Files
+
+| Abbreviation | Command                                              |
+| ------------ | ---------------------------------------------------- |
+| ga           | `git add`                                            |
+| gaa          | `git add --all`                                      |
+| gapa         | `git add --patch`                                    |
+| grm          | `git rm`                                             |
+| grmc         | `git rm --cached`                                    |
+| grs          | `git restore`                                        |
+| grss         | `git restore --source`                               |
+
+
 ### Everything Else
 
 | Abbreviation | Command                                                     |
 | ------------ | --------------------------------------------------------    |
 | g            | `git`                                                       |
-| ga           | `git add`                                                   |
-| gaa          | `git add --all`                                             |
-| gapa         | `git add --patch`                                           |
-| gcf          | list git configuration                                      |
+| gap          | `git apply`                                                 |
+| gbl          | `git blame -b -w`                                           |
+| gcf          | `git config --list`                                         |
 | gcl          | `git clone`                                                 |
 | gclean       | pristine working directory: reset and force clean           |
 | gcp          | `git cherry-pick`                                           |
-| gd           | `git diff`                                                  |
-| gdca         | `git diff --cached`                                         |
-| gds          | `git diff --stat`                                           |
-| gdsc         | `git diff --stat --cached`                                  |
-| gdv          | pipe git diff to `view` command                             |
+| gcpa         | `git cherry-pick --abort`                                   |
+| gcpc         | `git cherry-pick --continue`                                |
 | gignore      | `git update-index --assume-unchanged`                       |
 | gignored     | list temporarily ignored files                              |
 | gf           | `git fetch`                                                 |
@@ -183,10 +221,9 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gfo          | `git fetch origin`                                          |
 | gm           | `git merge`                                                 |
 | gmt          | `git mergetool --no-prompt`                                 |
+| grev         | `git revert`                                                |
 | grh          | `git reset HEAD`                                            |
 | grhh         | `git reset HEAD --hard`                                     |
-| grs          | `git restore`                                               |
-| grss         | `git restore --source`                                      |
 | grt          | cd into the top of the current repository or submodule      |
 | gsh          | `git show`                                                  |
 | gsd          | `git svn dcommit`                                           |
