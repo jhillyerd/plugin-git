@@ -207,16 +207,16 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | g            | `git`                                                       |
 | gap          | `git apply`                                                 |
 | gbl          | `git blame -b -w`                                           |
-| gcf          | `git config --list`                                         |
+| gcf          | `git config --list`                                          |
 | gcl          | `git clone`                                                 |
-| gclean       | `git clean -di`           |
-| gclean!      | `git clean -dfx`           |
-| gclean!!     | `git reset --hard; and git clean -dfx`          |
+| gclean       | `git clean -di`                                             |
+| gclean!      | `git clean -dfx`                                            |
+| gclean!!     | `git reset --hard; and git clean -dfx`                      |
 | gcp          | `git cherry-pick`                                           |
 | gcpa         | `git cherry-pick --abort`                                   |
 | gcpc         | `git cherry-pick --continue`                                |
 | gignore      | `git update-index --assume-unchanged`                       |
-| gignored     | list temporarily ignored files                              |
+| gignored     | list temporarily ignored files                               |
 | gf           | `git fetch`                                                 |
 | gfa          | `git fetch --all --prune`                                   |
 | gfm          | `git fetch origin master --prune; and git merge FETCH_HEAD` |
