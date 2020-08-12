@@ -47,7 +47,8 @@ __git_abbr gcam       git commit -a -m
 __git_abbr gscam      git commit -S -a -m
 __git_abbr gcl        git clone
 __git_abbr gclean     git clean -di
-__git_abbr gclean!    git clean -xdf
+__git_abbr gclean!    git clean -dfx
+__git_abbr gclean!!   "git reset --hard; and git clean -dfx"
 __git_abbr gcount     git shortlog -sn
 __git_abbr gcp        git cherry-pick
 __git_abbr gcpa       git cherry-pick --abort

@@ -209,7 +209,9 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gbl          | `git blame -b -w`                                           |
 | gcf          | `git config --list`                                         |
 | gcl          | `git clone`                                                 |
-| gclean       | pristine working directory: reset and force clean           |
+| gclean       | `git clean -di`           |
+| gclean!      | `git clean -dfx`           |
+| gclean!!     | `git reset --hard; and git clean -dfx`          |
 | gcp          | `git cherry-pick`                                           |
 | gcpa         | `git cherry-pick --abort`                                   |
 | gcpc         | `git cherry-pick --continue`                                |
