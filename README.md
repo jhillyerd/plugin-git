@@ -151,7 +151,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | grbmia       | `git rebase master --interactive --autosquash`       |
 | grbd         | `git rebase develop`                                 |
 | grbdd        | `git rebase develop --interactive`                   |
-| grbdia       | `git rebase develop --interactive --autosquash`       |
+| grbdia       | `git rebase develop --interactive --autosquash`      |
 | grbs         | `git rebase --skip`                                  |
 | ggu          | fetch & rebase _current-branch_ on top of the upstream branch |
 
@@ -207,7 +207,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | g            | `git`                                                       |
 | gap          | `git apply`                                                 |
 | gbl          | `git blame -b -w`                                           |
-| gcf          | `git config --list`                                          |
+| gcf          | `git config --list`                                         |
 | gcl          | `git clone`                                                 |
 | gclean       | `git clean -di`                                             |
 | gclean!      | `git clean -dfx`                                            |
@@ -216,7 +216,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gcpa         | `git cherry-pick --abort`                                   |
 | gcpc         | `git cherry-pick --continue`                                |
 | gignore      | `git update-index --assume-unchanged`                       |
-| gignored     | list temporarily ignored files                               |
+| gignored     | list temporarily ignored files                              |
 | gf           | `git fetch`                                                 |
 | gfa          | `git fetch --all --prune`                                   |
 | gfm          | `git fetch origin master --prune; and git merge FETCH_HEAD` |
