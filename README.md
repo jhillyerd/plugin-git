@@ -151,7 +151,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | grbmia       | `git rebase master --interactive --autosquash`       |
 | grbd         | `git rebase develop`                                 |
 | grbdd        | `git rebase develop --interactive`                   |
-| grbdia       | `git rebase develop --interactive --autosquash`       |
+| grbdia       | `git rebase develop --interactive --autosquash`      |
 | grbs         | `git rebase --skip`                                  |
 | ggu          | fetch & rebase _current-branch_ on top of the upstream branch |
 
@@ -209,7 +209,9 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gbl          | `git blame -b -w`                                           |
 | gcf          | `git config --list`                                         |
 | gcl          | `git clone`                                                 |
-| gclean       | pristine working directory: reset and force clean           |
+| gclean       | `git clean -di`                                             |
+| gclean!      | `git clean -dfx`                                            |
+| gclean!!     | `git reset --hard; and git clean -dfx`                      |
 | gcp          | `git cherry-pick`                                           |
 | gcpa         | `git cherry-pick --abort`                                   |
 | gcpc         | `git cherry-pick --continue`                                |
