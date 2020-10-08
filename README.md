@@ -39,6 +39,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gbd          | `git branch -d`                                      |
 | gbD          | `git branch -D`                                      |
 | gbda         | delete all branches merged in current HEAD           |
+| gbage        | list local branches and display their age            |
 | ggsup        | git set upstream to origin/_current-branch_          |
 | grename      | rename _old_ branch to _new_, including in origin remote |
 
