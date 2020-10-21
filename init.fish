@@ -45,6 +45,7 @@ __git_abbr gcav!      git commit -a -v --no-verify --amend
 __git_abbr gcm        git commit -m
 __git_abbr gcam       git commit -a -m
 __git_abbr gscam      git commit -S -a -m
+__git_abbr gcfx       git commit --fixup
 __git_abbr gcl        git clone
 __git_abbr gclean     git clean -di
 __git_abbr gclean!    git clean -dfx

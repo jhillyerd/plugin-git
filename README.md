@@ -68,6 +68,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 | gcm          | `git commit -m`                                      |
 | gcam         | `git commit -a -m`                                   |
 | gscam        | `git commit -S -a -m`                                |
+| gcfx         | `git commit --fixup`                                 |
 
 ### Diff
 
