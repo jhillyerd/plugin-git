@@ -10,7 +10,7 @@ function $install_event --on-event $install_event
 end
 
 function $update_event --on-event $update_event
-  __git.destroy; and __git.init
+  __git.reset
 end
 
 function $uninstall_event --on-event $uninstall_event
