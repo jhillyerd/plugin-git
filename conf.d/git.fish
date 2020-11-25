@@ -1,18 +1,11 @@
-set -l git
-set -l install_event (echo $event_name_base)_install
-set -l update_event (echo $event_name_base)_update
-set -l uninstall_event (echo $event_name_base)_uninstall
-
-__git.init
-
-function $install_event --on-event $install_event
+function _git_install --on-event git_install
   __git.init
 end
 
-function $update_event --on-event $update_event
+function _git_update --on-event git_update
   __git.reset
 end
 
-function $uninstall_event --on-event $uninstall_event
+function _git_uninstall --on-event git_uninstall
   __git.destroy
 end
