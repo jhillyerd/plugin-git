@@ -1,1 +1,2 @@
-source $path/init.fish
+source $path/functions/__git.init.fish
+__git.init

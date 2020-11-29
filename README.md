@@ -1,7 +1,7 @@
 <img src="https://cdn.rawgit.com/oh-my-fish/oh-my-fish/e4f1c2e0219a17e2c748b824004c8d0b38055c16/docs/logo.svg" align="left" width="144px" height="144px"/>
 
 #### git
-> A git aliases plugin for [Oh My Fish][omf-link] based loosely on the
+> A git aliases plugin for [Oh My Fish][omf-link] and [Fisher][fisher-link] based loosely on the
 [Oh My Zsh Git Plugin][omz-git-plugin].
 
 [![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE)
@@ -12,10 +12,16 @@
 
 ## Install
 
+oh-my-fish:
+
 ```fish
 $ omf install https://github.com/jhillyerd/plugin-git
 ```
 
+fisher:
+```fish
+$ fisher install jhillyerd/plugin-git
+```
 
 ## Usage
 
@@ -251,6 +257,7 @@ $ omf install https://github.com/jhillyerd/plugin-git
 [author]:         https://github.com/jhillyerd
 [contributors]:   https://github.com/jhillyerd/plugin-git/graphs/contributors
 [omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
+[fisher-link]:    https://github.com/jorgebucaran/fisher
 
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
 [omz-git-plugin]: https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git

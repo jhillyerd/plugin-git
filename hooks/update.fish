@@ -1,2 +1,2 @@
-source $path/uninstall.fish
-source $path/init.fish
+source $path/functions/__git.reset.fish
+__git.reset
