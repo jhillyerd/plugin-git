@@ -58,7 +58,7 @@ function __git.init
   __git.create_abbr gignore    git update-index --assume-unchanged
   __git.create_abbr gf         git fetch
   __git.create_abbr gfa        git fetch --all --prune
-  __git.create_abbr gfm        "git fetch origin master --prune; and git merge FETCH_HEAD"
+  __git.create_abbr gfm        "git fetch origin (__git.default_branch) --prune; and git merge FETCH_HEAD"
   __git.create_abbr gfo        git fetch origin
   __git.create_abbr gl         git pull
   __git.create_abbr gll        git pull origin
@@ -68,7 +68,7 @@ function __git.init
   __git.create_abbr glgga      git log --graph --decorate --all
   __git.create_abbr glo        git log --oneline --decorate --color
   __git.create_abbr glog       git log --oneline --decorate --color --graph
-  __git.create_abbr glom       git log --oneline --decorate --color master..
+  __git.create_abbr glom       git log --oneline --decorate --color \(__git.default_branch\)..
   __git.create_abbr glod       git log --oneline --decorate --color develop..
   __git.create_abbr gloo       "git log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short"
   __git.create_abbr gm         git merge
@@ -87,12 +87,12 @@ function __git.init
   __git.create_abbr grba       git rebase --abort
   __git.create_abbr grbc       git rebase --continue
   __git.create_abbr grbi       git rebase --interactive
-  __git.create_abbr grbm       git rebase master
-  __git.create_abbr grbmi      git rebase master --interactive
-  __git.create_abbr grbmia     git rebase master --interactive --autosquash
+  __git.create_abbr grbm       git rebase \(__git.default_branch\)
+  __git.create_abbr grbmi      git rebase \(__git.default_branch\) --interactive
+  __git.create_abbr grbmia     git rebase \(__git.default_branch\) --interactive --autosquash
   __git.create_abbr grbd       git rebase develop
-  __git.create_abbr grbdi      git rebase master --interactive
-  __git.create_abbr grbdia     git rebase master --interactive --autosquash
+  __git.create_abbr grbdi      git rebase \(__git.default_branch\) --interactive
+  __git.create_abbr grbdia     git rebase \(__git.default_branch\) --interactive --autosquash
   __git.create_abbr grbs       git rebase --skip
   __git.create_abbr grev       git revert
   __git.create_abbr grh        git reset
@@ -130,7 +130,7 @@ function __git.init
   __git.create_abbr gco        git checkout
   __git.create_abbr gcb        git checkout -b
   __git.create_abbr gcod       git checkout develop
-  __git.create_abbr gcom       git checkout master
+  __git.create_abbr gcom       git checkout \(__git.default_branch\)
 
   # git flow abbreviations
   __git.create_abbr gfb        git flow bugfix
