@@ -97,6 +97,7 @@ function __git.init
   __git.create_abbr grev       git revert
   __git.create_abbr grh        git reset
   __git.create_abbr grhh       git reset --hard
+  __git.create_abbr grhpa      git reset --patch
   __git.create_abbr grm        git rm
   __git.create_abbr grmc       git rm --cached
   __git.create_abbr grmv       git remote rename
