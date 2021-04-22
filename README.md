@@ -234,6 +234,7 @@ $ fisher install jhillyerd/plugin-git
 | grev         | `git revert`                                                |
 | grh          | `git reset HEAD`                                            |
 | grhh         | `git reset HEAD --hard`                                     |
+| grhpa        | `git reset --patch`                                         |
 | grt          | cd into the top of the current repository or submodule      |
 | gsh          | `git show`                                                  |
 | gsd          | `git svn dcommit`                                           |
