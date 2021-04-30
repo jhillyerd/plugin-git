@@ -87,6 +87,7 @@ $ fisher install jhillyerd/plugin-git
 | gdt          | list changed files                                   |
 | gdw          | `git diff --word-diff`                               |
 | gdwc         | `git diff --word-diff --cached`                      |
+| gdto         | `git difftool`                                       |
 | gdv          | pipe `git diff` to `view` command                    |
 
 ### Flow
