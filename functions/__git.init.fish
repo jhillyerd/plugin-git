@@ -92,8 +92,8 @@ function __git.init
   __git.create_abbr grbmi      git rebase \(__git.default_branch\) --interactive
   __git.create_abbr grbmia     git rebase \(__git.default_branch\) --interactive --autosquash
   __git.create_abbr grbd       git rebase develop
-  __git.create_abbr grbdi      git rebase \(__git.default_branch\) --interactive
-  __git.create_abbr grbdia     git rebase \(__git.default_branch\) --interactive --autosquash
+  __git.create_abbr grbdi      git rebase develop --interactive
+  __git.create_abbr grbdia     git rebase develop --interactive --autosquash
   __git.create_abbr grbs       git rebase --skip
   __git.create_abbr grev       git revert
   __git.create_abbr grh        git reset
