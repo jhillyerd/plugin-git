@@ -192,7 +192,7 @@ $ fisher install jhillyerd/plugin-git
 | Abbreviation | Command                                              |
 | ------------ | ---------------------------------------------------- |
 | gts          | `git tag -s`                                         |
-| gtv          | `git tag | sort -V`                                  |
+| gtv          | `git tag \| sort -V`                                 |
 | gtl          | list tags matching prefix                            |
 
 
