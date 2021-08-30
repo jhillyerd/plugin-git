@@ -134,6 +134,9 @@ $ fisher install jhillyerd/plugin-git
 | gl           | `git pull`                                           |
 | ggl          | pull origin _current-branch_                         |
 | gup          | `git pull --rebase`                                  |
+| gupv         | `git pull --rebase -v`                               |
+| gupa         | `git pull --rebase --autostash`                      |
+| gupav        | `git pull --rebase --autostash -v`                   |
 | glr          | `git pull --rebase`                                  |
 | gp           | `git push`                                           |
 | gp!          | `git push --force-with-lease`                        |

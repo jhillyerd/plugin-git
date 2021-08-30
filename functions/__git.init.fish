@@ -126,6 +126,9 @@ function __git.init
   __git.create_abbr gswc       git switch --create
   __git.create_abbr gunignore  git update-index --no-assume-unchanged
   __git.create_abbr gup        git pull --rebase
+  __git.create_abbr gupv       git pull --rebase -v
+  __git.create_abbr gupa       git pull --rebase --autostash
+  __git.create_abbr gupav      git pull --rebase --autostash -v
   __git.create_abbr gwch       git whatchanged -p --abbrev-commit --pretty=medium
 
   # git checkout abbreviations
