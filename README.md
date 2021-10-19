@@ -23,6 +23,15 @@ fisher:
 $ fisher install jhillyerd/plugin-git
 ```
 
+## Default branch name
+
+`plugin-git` respects `init.defaultBranch` setting that was [introduced in git 2.28](https://github.blog/2020-07-27-highlights-from-git-2-28/#introducing-init-defaultbranch).
+The order for resolving the default branch name is as follows:
+
+1. `init.defaultBranch` if it is set and the branch exists
+2. `main` if it exists
+3. `master` as fallback
+
 ## Usage
 
 ### Bisect
@@ -55,7 +64,7 @@ $ fisher install jhillyerd/plugin-git
 | ------------ | ---------------------------------------------------- |
 | gco          | `git checkout`                                       |
 | gcod         | `git checkout develop`                               |
-| gcom         | `git checkout master`                                |
+| gcom         | `git checkout (__git.default_branch)`                |
 | gcb          | `git checkout -b`                                    |
 
 ### Commit
@@ -122,7 +131,7 @@ $ fisher install jhillyerd/plugin-git
 | glo          | `git log --oneline --decorate --color`               |
 | gloo         | `git log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short` |
 | glog         | `git log --oneline --decorate --color --graph`       |
-| glom         | `git log --oneline --decorate --color master..`      |
+| glom         | `git log --oneline --decorate --color (__git.default_branch)..` |
 | glod         | `git log --oneline --decorate --color develop..`     |
 | glp          | `git log` at requested pretty level                  |
 | gwch         | `git whatchanged -p --abbrev-commit --pretty=medium` |
@@ -158,9 +167,9 @@ $ fisher install jhillyerd/plugin-git
 | grba         | `git rebase --abort`                                 |
 | grbc         | `git rebase --continue`                              |
 | grbi         | `git rebase --interactive`                           |
-| grbm         | `git rebase master`                                  |
-| grbmi        | `git rebase master --interactive`                    |
-| grbmia       | `git rebase master --interactive --autosquash`       |
+| grbm         | `git rebase (__git.default_branch)`                            |
+| grbmi        | `git rebase (__git.default_branch) --interactive`              |
+| grbmia       | `git rebase (__git.default_branch) --interactive --autosquash` |
 | grbd         | `git rebase develop`                                 |
 | grbdi        | `git rebase develop --interactive`                   |
 | grbdia       | `git rebase develop --interactive --autosquash`      |
@@ -231,7 +240,7 @@ $ fisher install jhillyerd/plugin-git
 | gignored     | list temporarily ignored files                              |
 | gf           | `git fetch`                                                 |
 | gfa          | `git fetch --all --prune`                                   |
-| gfm          | `git fetch origin master --prune; and git merge FETCH_HEAD` |
+| gfm          | `git fetch origin (__git.default_branch) --prune; and git merge FETCH_HEAD` |
 | gfo          | `git fetch origin`                                          |
 | gm           | `git merge`                                                 |
 | gmt          | `git mergetool --no-prompt`                                 |
