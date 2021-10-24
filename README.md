@@ -244,6 +244,7 @@ The order for resolving the default branch name is as follows:
 | gfo          | `git fetch origin`                                          |
 | gm           | `git merge`                                                 |
 | gmt          | `git mergetool --no-prompt`                                 |
+| gmom         | `git merge origin/(__git.default_branch)`                   |
 | grev         | `git revert`                                                |
 | grh          | `git reset HEAD`                                            |
 | grhh         | `git reset HEAD --hard`                                     |
