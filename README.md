@@ -214,6 +214,7 @@ The order for resolving the default branch name is as follows:
 | ------------ | ---------------------------------------------------- |
 | ga           | `git add`                                            |
 | gaa          | `git add --all`                                      |
+| gau          | `git add --update`                                   |
 | gapa         | `git add --patch`                                    |
 | grm          | `git rm`                                             |
 | grmc         | `git rm --cached`                                    |
