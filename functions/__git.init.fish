@@ -117,6 +117,7 @@ function __git.init
   __git.create_abbr gst        git status
   __git.create_abbr gsta       git stash
   __git.create_abbr gstd       git stash drop
+  __git.create_abbr gstl       git stash list
   __git.create_abbr gstp       git stash pop
   __git.create_abbr gsts       git stash show --text
   __git.create_abbr gsu        git submodule update

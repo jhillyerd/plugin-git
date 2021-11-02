@@ -194,6 +194,7 @@ The order for resolving the default branch name is as follows:
 | ------------ | ---------------------------------------------------- |
 | gsta         | `git stash`                                          |
 | gstd         | `git stash drop`                                     |
+| gstl         | `git stash list`                                     |
 | gstp         | `git stash pop`                                      |
 | gsts         | `git stash show --text`                              |
 | gwip         | commit a work-in-progress branch                     |
