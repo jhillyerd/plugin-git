@@ -125,8 +125,8 @@ The order for resolving the default branch name is as follows:
 | Abbreviation | Command                                              |
 | ------------ | ---------------------------------------------------- |
 | gcount       | `git shortlog -sn`                                   |
-| glg          | `git log --stat --max-count=10`                      |
-| glgg         | `git log --graph --max-count=10`                     |
+| glg          | `git log --stat`                                     |
+| glgg         | `git log --graph`                                    |
 | glgga        | `git log --graph --decorate --all`                   |
 | glo          | `git log --oneline --decorate --color`               |
 | gloo         | `git log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short` |
