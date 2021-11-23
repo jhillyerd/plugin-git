@@ -108,6 +108,7 @@ function __git.init
   __git.create_abbr grs        git restore
   __git.create_abbr grset      git remote set-url
   __git.create_abbr grss       git restore --source
+  __git.create_abbr grst       git restore --staged
   __git.create_abbr grup       git remote update
   __git.create_abbr grv        git remote -v
   __git.create_abbr gsh        git show

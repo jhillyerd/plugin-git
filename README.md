@@ -221,6 +221,7 @@ The order for resolving the default branch name is as follows:
 | grmc         | `git rm --cached`                                    |
 | grs          | `git restore`                                        |
 | grss         | `git restore --source`                               |
+| grst         | `git restore --staged`                               |
 
 
 ### Everything Else
