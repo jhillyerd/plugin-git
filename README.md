@@ -131,6 +131,7 @@ The order for resolving the default branch name is as follows:
 | glo          | `git log --oneline --decorate --color`               |
 | gloo         | `git log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short` |
 | glog         | `git log --oneline --decorate --color --graph`       |
+| gloga        | `git log --oneline --decorate --color --graph --all` |
 | glom         | `git log --oneline --decorate --color (__git.default_branch)..` |
 | glod         | `git log --oneline --decorate --color develop..`     |
 | glp          | `git log` at requested pretty level                  |
