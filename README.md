@@ -164,6 +164,7 @@ The order for resolving the default branch name is as follows:
 
 | Abbreviation | Command                                              |
 | ------------ | ---------------------------------------------------- |
+| gpsup        | `git push --set-upstream origin <current_branch>`    |
 | grb          | `git rebase`                                         |
 | grba         | `git rebase --abort`                                 |
 | grbc         | `git rebase --continue`                              |
