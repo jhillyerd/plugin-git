@@ -184,6 +184,7 @@ The order for resolving the default branch name is as follows:
 | gr           | `git remote -vv`                                     |
 | gra          | `git remote add`                                     |
 | grmv         | `git remote rename`                                  |
+| grpo         | `git remote prune origin`                            |
 | grrm         | `git remote remove`                                  |
 | grset        | `git remote set-url`                                 |
 | grup         | `git remote update`                                  |
