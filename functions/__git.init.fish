@@ -105,6 +105,7 @@ function __git.init
   __git.create_abbr grm        git rm
   __git.create_abbr grmc       git rm --cached
   __git.create_abbr grmv       git remote rename
+  __git.create_abbr grpo       git remote prune origin
   __git.create_abbr grrm       git remote remove
   __git.create_abbr grs        git restore
   __git.create_abbr grset      git remote set-url
