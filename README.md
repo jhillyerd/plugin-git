@@ -225,6 +225,17 @@ The order for resolving the default branch name is as follows:
 | grss         | `git restore --source`                               |
 | grst         | `git restore --staged`                               |
 
+### Worktree
+
+| Abbreviation | Command                                              |
+| ------------ | ---------------------------------------------------- |
+| gwt          | `git worktree`                                       |
+| gwta         | `git worktree add`                                   |
+| gwtls        | `git worktree list`                                  |
+| gwtlo        | `git worktree lock`                                  |
+| gwtmv        | `git wortree remove`                                 |
+| gwtpr        | `git worktree prune`                                 |
+| gwtulo       | `git worktree unlock`                                |
 
 ### Everything Else
 
