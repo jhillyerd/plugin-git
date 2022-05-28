@@ -164,6 +164,16 @@ function __git.init
 
   __git.create_abbr gfp        git flow publish
 
+  # git worktree abbreviations
+  __git.create_abbr gwt        git worktree
+  __git.create_abbr gwta       git worktree add
+  __git.create_abbr gwtls      git worktree list
+  __git.create_abbr gwtlo      git worktree lock
+  __git.create_abbr gwtmv      git worktree move
+  __git.create_abbr gwtpr      git worktree prune
+  __git.create_abbr gwtrm      git worktree remove
+  __git.create_abbr gwtulo     git worktree unlock
+
   # Cleanup declared functions
   functions -e __git.create_abbr
 
