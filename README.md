@@ -152,6 +152,7 @@ The order for resolving the default branch name is as follows:
 | gp!          | `git push --force-with-lease`                        |
 | gpo          | `git push origin`                                    |
 | gpo!         | `git push --force-with-lease origin`                 |
+| gpoh         | `git push origin HEAD`                 |
 | gpv          | `git push --no-verify`                               |
 | gpv!         | `git push --no-verify --force-with-lease`            |
 | ggp          | push origin _current-branch_                         |
