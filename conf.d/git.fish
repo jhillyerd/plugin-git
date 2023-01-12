@@ -1,4 +1,4 @@
-function _git_install --on-event git_install
+function _git_init --on-event fish_prompt
   __git.init
 end
 
