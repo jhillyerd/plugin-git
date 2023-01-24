@@ -202,6 +202,7 @@ The order for resolving the default branch name is as follows:
 | gstl         | `git stash list`                                     |
 | gstp         | `git stash pop`                                      |
 | gsts         | `git stash show --text`                              |
+| gtest        | runs specified command against staged files only     |
 | gwip         | commit a work-in-progress branch                     |
 | gunwip       | uncommit the work-in-progress branch                 |
 
