@@ -171,6 +171,9 @@ The order for resolving the default branch name is as follows:
 | grbm         | `git rebase (__git.default_branch)`                            |
 | grbmi        | `git rebase (__git.default_branch) --interactive`              |
 | grbmia       | `git rebase (__git.default_branch) --interactive --autosquash` |
+| grbom        | `git fetch origin (__git.default_branch); and git rebase FETCH_HEAD` |
+| grbomi       | `git fetch origin (__git.default_branch); and git rebase FETCH_HEAD --interactive` |
+| grbomia      | `git fetch origin (__git.default_branch); and git rebase FETCH_HEAD --interactive --autosquash` |
 | grbd         | `git rebase develop`                                 |
 | grbdi        | `git rebase develop --interactive`                   |
 | grbdia       | `git rebase develop --interactive --autosquash`      |
