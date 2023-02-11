@@ -4,7 +4,6 @@ function __git.init
     set -l body $argv[2..-1]
     # TODO: global scope abbr will be default in fish 3.6.0
     abbr -a -g $name $body
-    set -a __git_plugin_abbreviations $name
   end
 
   set -U __git_plugin_abbreviations
