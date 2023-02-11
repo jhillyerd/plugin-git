@@ -182,6 +182,10 @@ function __git.init
   __git.create_abbr gwtrm      git worktree remove
   __git.create_abbr gwtulo     git worktree unlock
 
+  # GitLab push options
+  __git.create_abbr gmr        ggp --set-upstream -o merge_request.create
+  __git.create_abbr gmwps      ggp --set-upstream -o merge_request.create -o merge_request.merge_when_pipeline_succeeds
+
   # Cleanup declared functions
   functions -e __git.create_abbr
 end
