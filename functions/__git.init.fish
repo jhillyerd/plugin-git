@@ -94,6 +94,9 @@ function __git.init
   __git.create_abbr grbm       git rebase \(__git.default_branch\)
   __git.create_abbr grbmi      git rebase \(__git.default_branch\) --interactive
   __git.create_abbr grbmia     git rebase \(__git.default_branch\) --interactive --autosquash
+  __git.create_abbr grbom      "git fetch origin (__git.default_branch); and git rebase FETCH_HEAD"
+  __git.create_abbr grbomi     "git fetch origin (__git.default_branch); and git rebase FETCH_HEAD --interactive"
+  __git.create_abbr grbomia    "git fetch origin (__git.default_branch); and git rebase FETCH_HEAD --interactive --autosquash"
   __git.create_abbr grbd       git rebase develop
   __git.create_abbr grbdi      git rebase develop --interactive
   __git.create_abbr grbdia     git rebase develop --interactive --autosquash
