@@ -13,8 +13,7 @@ function gtest -d "test command on staged changes only"
   git restore .
 
   # Return working dir and index to original state.
-  git reset -q HEAD^
-  git add --all
+  git reset --soft HEAD~1
   git stash pop -q
 
   return $cmdstatus
