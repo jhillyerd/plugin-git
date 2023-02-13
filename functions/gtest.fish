@@ -3,18 +3,19 @@
 # example usage:
 #   gtest make test
 function gtest -d "test command on staged changes only"
-  # Commit index changes, stash everything else.
-  git commit -q --no-verify -m "WIP: testing index with $cmd"; or return
-  git stash push -q --include-untracked; or return
+  # Stash working dir, keeping index changes.
+  git stash push -q --keep-index --include-untracked; or return
 
   # Run test command and cleanup any trackable output.
   command $argv
   set cmdstatus $status
-  git restore .
 
   # Return working dir and index to original state.
-  git reset --soft HEAD~1
-  git stash pop -q
+  # Note: reset + restore is required to prevent merge conflicts
+  # when popping the stash.
+  git reset
+  git restore .
+  git stash pop -q --index; or return $status
 
   return $cmdstatus
 end
