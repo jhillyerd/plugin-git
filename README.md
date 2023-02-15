@@ -356,8 +356,8 @@ gunwip           # restore work in progress
 [mit]:            https://opensource.org/licenses/MIT
 [author]:         https://github.com/jhillyerd
 [contributors]:   https://github.com/jhillyerd/plugin-git/graphs/contributors
-[omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
+[omf-link]:       https://github.com/oh-my-fish/oh-my-fish
 [fisher-link]:    https://github.com/jorgebucaran/fisher
 
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
-[omz-git-plugin]: https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git
+[omz-git-plugin]: https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git/
