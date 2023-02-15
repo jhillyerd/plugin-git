@@ -1,8 +1,8 @@
 <img src="https://cdn.rawgit.com/oh-my-fish/oh-my-fish/e4f1c2e0219a17e2c748b824004c8d0b38055c16/docs/logo.svg" align="left" width="144px" height="144px"/>
 
 #### git
-> A git aliases plugin for [Oh My Fish][omf-link] and [Fisher][fisher-link] based loosely on the
-[Oh My Zsh Git Plugin][omz-git-plugin].
+> A git aliases plugin for [Oh My Fish][omf-link] and [Fisher][fisher-link],
+> based loosely on the [Oh My Zsh Git Plugin][omz-git-plugin].
 
 [![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE)
 [![Fish Shell Version](https://img.shields.io/badge/fish-v3.5.0-007EC7.svg?style=flat-square)](https://fishshell.com)
@@ -31,6 +31,64 @@ The order for resolving the default branch name is as follows:
 1. `init.defaultBranch` if it is set and the branch exists
 2. `main` if it exists
 3. `master` as fallback
+
+## Sample workflow
+
+```
+cd my-repo       # enter a git repo
+gss              # check current status
+
+.. bunch of old edits I don't want ..
+
+gclean!!         # pristine repo!!
+gcom             # checkout main/master branch
+gl               # pull changes
+gcb fix-bug      # create new fix-bug branch
+
+.. edit files ..
+
+gaa              # add (stage) all changed and new files
+gc               # commit changes
+gpu              # push to origin, set upstream
+
+.. oops, edit more files ..
+
+gcan!            # amend commit w/ all modified files, re-using message
+gp!              # force push changes
+
+.. main branch has some changes I need ..
+
+grbom            # fetch origin and rebase on main/master
+
+.. editing some files, but need to work on something else quickly ..
+
+gwip             # save WIP commit of working directory for later
+gfa              # fetch all branches from origin
+gloga            # view log graph of all recent repo activity
+gco feature      # switch to existing feature branch
+gwch             # inspect what changed recently (with diffs)
+
+.. edit lots of files ..
+
+ga file1 file2   # add just the files I want to commit
+
+.. hmm, will my tests pass with just these two files? ..
+
+gtest make test  # runs 'make test' against staged changes only
+
+.. failed! need to patch in some other changes ..
+
+gapa             # selectively stage more changes
+gtest make test
+gcm "tests pass" # commit staged w/ message
+gca              # commit all other modified files
+gp               # push
+
+.. back to my bugfix ..
+
+gco fix-bug      # checkout
+gunwip           # restore work in progress
+```
 
 ## Usage
 
