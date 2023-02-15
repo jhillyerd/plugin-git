@@ -240,6 +240,13 @@ The order for resolving the default branch name is as follows:
 | gwtpr        | `git worktree prune`                                 |
 | gwtulo       | `git worktree unlock`                                |
 
+### GitLab-specific [push options](https://docs.gitlab.com/ee/user/project/push_options.html)
+
+| Abbreviation | Command                                              |
+| ------------ | ---------------------------------------------------- |
+| gmr          | Push current branch and create a merge request from it |
+| gmwps        | Same as `gmr` but set the merge request to merge when the pipeline succeeds |
+
 ### Everything Else
 
 | Abbreviation | Command                                                     |
