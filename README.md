@@ -7,6 +7,7 @@
 [![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE)
 [![Fish Shell Version](https://img.shields.io/badge/fish-v3.5.0-007EC7.svg?style=flat-square)](https://fishshell.com)
 [![Oh My Fish Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
+[![Nix Package](https://img.shields.io/badge/nixpkgs-fishPlugins.plugin--git-blue?style=flat-square&logo=nixos)](https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/shells/fish/plugins/plugin-git.nix)
 
 <br/>
 
@@ -21,6 +22,25 @@ $ omf install https://github.com/jhillyerd/plugin-git
 fisher:
 ```fish
 $ fisher install jhillyerd/plugin-git
+```
+
+Nix's home-manager:
+```nix
+{
+  # ...
+  programs.fish = {
+    enable = true;
+
+    plugins = [
+      {
+        name = "plugin-git";
+        src = pkgs.fishPlugins.plugin-git.src;
+      }
+    ];
+  };
+  # ...
+}
+
 ```
 
 ## Default branch name
