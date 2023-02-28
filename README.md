@@ -133,8 +133,8 @@ gunwip           # restore work in progress
 | gbD          | `git branch -D`                                      |
 | gbda         | delete all branches merged in current HEAD           |
 | gbage        | list local branches and display their age            |
-| ggsup        | git set upstream to origin/_current-branch_          |
-| grename      | rename _old_ branch to _new_, including in origin remote |
+| ggsup        | `git branch --set-upstream-to=origin/(__git.current_branch)`  |
+| grename      | rename _old_ branch to _new_, including in origin remote      |
 
 ### Checkout
 
@@ -220,7 +220,7 @@ gunwip           # restore work in progress
 | Abbreviation | Command                                              |
 | ------------ | ---------------------------------------------------- |
 | gl           | `git pull`                                           |
-| ggl          | pull origin _current-branch_                         |
+| ggl          | `git pull origin (__git.current_branch)`             |
 | gup          | `git pull --rebase`                                  |
 | gupv         | `git pull --rebase -v`                               |
 | gupa         | `git pull --rebase --autostash`                      |
@@ -232,10 +232,10 @@ gunwip           # restore work in progress
 | gpo!         | `git push --force-with-lease origin`                 |
 | gpv          | `git push --no-verify`                               |
 | gpv!         | `git push --no-verify --force-with-lease`            |
-| ggp          | push origin _current-branch_                         |
-| ggp!         | `ggp --force-with-lease`                             |
-| gpu          | `ggp --set-upstream`                                 |
-| gpoat        | push all + tags to origin                            |
+| ggp          | `git push origin (__git.current_branch)`             |
+| ggp!         | `git push origin (__git.current_branch) --force-with-lease`   |
+| gpu          | `git push origin (__git.current_branch) --set-upstream`       |
+| gpoat        | `git push origin --all; and git push origin --tags`  |
 | ggpnp        | pull & push origin _current-branch_                  |
 
 ### Rebase
@@ -256,7 +256,7 @@ gunwip           # restore work in progress
 | grbdi        | `git rebase develop --interactive`                   |
 | grbdia       | `git rebase develop --interactive --autosquash`      |
 | grbs         | `git rebase --skip`                                  |
-| ggu          | fetch & rebase _current-branch_ on top of the upstream branch |
+| ggu          | `git pull --rebase origin \(__git.current_branch\)`  |
 
 ### Remote
 
