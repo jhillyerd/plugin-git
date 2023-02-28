@@ -171,7 +171,7 @@ gunwip           # restore work in progress
 | gdca         | `git diff --cached`                                  |
 | gds          | `git diff --stat`                                    |
 | gdsc         | `git diff --stat --cached`                           |
-| gdt          | `git diff-tree --no-commit-id --name-only -r`        |
+| gdt          | list changed files                                   |
 | gdw          | `git diff --word-diff`                               |
 | gdwc         | `git diff --word-diff --cached`                      |
 | gdto         | `git difftool`                                       |
@@ -236,7 +236,7 @@ gunwip           # restore work in progress
 | ggp!         | `git push origin (__git.current_branch) --force-with-lease`   |
 | gpu          | `git push origin (__git.current_branch) --set-upstream`       |
 | gpoat        | `git push origin --all; and git push origin --tags`  |
-| ggpnp        | `git pull origin (__git.current_branch); and git push origin (__git.current_branch)`    |
+| ggpnp        | pull & push origin _current-branch_                  |
 
 ### Rebase
 
