@@ -27,6 +27,7 @@ function __git.init
   __git.create_abbr gban       git branch -a -v --no-merged
   __git.create_abbr gbd        git branch -d
   __git.create_abbr gbD        git branch -D
+  __git.create_abbr ggsup      git branch --set-upstream-to=origin/\(__git.current_branch\)
   __git.create_abbr gbl        git blame -b -w
   __git.create_abbr gbs        git bisect
   __git.create_abbr gbsb       git bisect bad
@@ -59,6 +60,7 @@ function __git.init
   __git.create_abbr gdca       git diff --cached
   __git.create_abbr gds        git diff --stat
   __git.create_abbr gdsc       git diff --stat --cached
+  __git.create_abbr gdt        git diff-tree --no-commit-id --name-only -r
   __git.create_abbr gdw        git diff --word-diff
   __git.create_abbr gdwc       git diff --word-diff --cached
   __git.create_abbr gdto       git difftool
@@ -68,6 +70,7 @@ function __git.init
   __git.create_abbr gfm        "git fetch origin (__git.default_branch) --prune; and git merge FETCH_HEAD"
   __git.create_abbr gfo        git fetch origin
   __git.create_abbr gl         git pull
+  __git.create_abbr ggl        git pull origin \(__git.current_branch\)
   __git.create_abbr gll        git pull origin
   __git.create_abbr glr        git pull --rebase
   __git.create_abbr glg        git log --stat
@@ -88,8 +91,11 @@ function __git.init
   __git.create_abbr gpo!       git push --force-with-lease origin
   __git.create_abbr gpv        git push --no-verify
   __git.create_abbr gpv!       git push --no-verify --force-with-lease
-  __git.create_abbr ggp!       ggp --force-with-lease
-  __git.create_abbr gpu        ggp --set-upstream
+  __git.create_abbr ggp        git push origin \(__git.current_branch\)
+  __git.create_abbr ggp!       git push origin \(__git.current_branch\) --force-with-lease
+  __git.create_abbr gpu        git push origin \(__git.current_branch\) --set-upstream
+  __git.create_abbr gpoat      "git push origin --all; and git push origin --tags"
+  __git.create_abbr ggpnp      "git pull origin (__git.current_branch); and git push origin (__git.current_branch)"
   __git.create_abbr gr         git remote -vv
   __git.create_abbr gra        git remote add
   __git.create_abbr grb        git rebase
@@ -106,6 +112,7 @@ function __git.init
   __git.create_abbr grbdi      git rebase develop --interactive
   __git.create_abbr grbdia     git rebase develop --interactive --autosquash
   __git.create_abbr grbs       git rebase --skip
+  __git.create_abbr ggu        git pull --rebase origin \(__git.current_branch\)
   __git.create_abbr grev       git revert
   __git.create_abbr grh        git reset
   __git.create_abbr grhh       git reset --hard
@@ -183,8 +190,8 @@ function __git.init
   __git.create_abbr gwtulo     git worktree unlock
 
   # GitLab push options
-  __git.create_abbr gmr        ggp --set-upstream -o merge_request.create
-  __git.create_abbr gmwps      ggp --set-upstream -o merge_request.create -o merge_request.merge_when_pipeline_succeeds
+  __git.create_abbr gmr        git push origin \(__git.current_branch\) --set-upstream -o merge_request.create
+  __git.create_abbr gmwps      git push origin \(__git.current_branch\) --set-upstream -o merge_request.create -o merge_request.merge_when_pipeline_succeeds
 
   # Cleanup declared functions
   functions -e __git.create_abbr
