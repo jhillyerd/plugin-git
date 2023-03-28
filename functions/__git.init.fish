@@ -15,6 +15,9 @@ function __git.init
     __git.destroy
   end
 
+  # preset the quote pair
+  abbr -a -g --set-cursor='%' -- gcm 'git commit -m "%"'
+  
   # git abbreviations
   __git.create_abbr g          git
   __git.create_abbr ga         git add
@@ -43,7 +46,6 @@ function __git.init
   __git.create_abbr gcv        git commit -v --no-verify
   __git.create_abbr gcav       git commit -a -v --no-verify
   __git.create_abbr gcav!      git commit -a -v --no-verify --amend
-  __git.create_abbr gcm        git commit -m
   __git.create_abbr gcam       git commit -a -m
   __git.create_abbr gcs        git commit -S
   __git.create_abbr gscam      git commit -S -a -m
