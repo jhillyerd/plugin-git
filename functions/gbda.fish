@@ -1,7 +1,7 @@
 function gbda -d "Delete all branches merged in current HEAD, including squashed"
   git branch --merged | \
     command grep -vE  '^\*|^\s*(master|main|develop)\s*$' | \
-    command xargs -n 1 git branch -d
+    command xargs -r -n 1 git branch -d
 
   set -l default_branch (__git.default_branch)
   git for-each-ref refs/heads/ "--format=%(refname:short)" | \
