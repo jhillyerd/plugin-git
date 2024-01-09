@@ -359,6 +359,7 @@ gunwip           # restore work in progress
 | gsh          | `git show`                                                  |
 | gsd          | `git svn dcommit`                                           |
 | gsr          | `git svn rebase`                                            |
+| gsb          | `git status -sb`                                            |
 | gss          | `git status -s`                                             |
 | gst          | `git status`                                                |
 | gsu          | `git submodule update`                                      |
