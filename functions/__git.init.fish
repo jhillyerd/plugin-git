@@ -132,6 +132,7 @@ function __git.init
   __git.create_abbr gsh        git show
   __git.create_abbr gsd        git svn dcommit
   __git.create_abbr gsr        git svn rebase
+  __git.create_abbr gsb        git status -sb
   __git.create_abbr gss        git status -s
   __git.create_abbr gst        git status
   __git.create_abbr gsta       git stash
