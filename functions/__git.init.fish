@@ -65,6 +65,7 @@ function __git.init
   __git.create_abbr gdw        git diff --word-diff
   __git.create_abbr gdwc       git diff --word-diff --cached
   __git.create_abbr gdto       git difftool
+  __git.create_abbr gdg        git diff --no-ext-diff
   __git.create_abbr gignore    git update-index --assume-unchanged
   __git.create_abbr gf         git fetch
   __git.create_abbr gfa        git fetch --all --prune
