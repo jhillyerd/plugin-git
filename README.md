@@ -176,6 +176,7 @@ gunwip           # restore work in progress
 | gdw          | `git diff --word-diff`                               |
 | gdwc         | `git diff --word-diff --cached`                      |
 | gdto         | `git difftool`                                       |
+| gdg          | `git diff --no-ext-diff`                             |
 | gdv          | pipe `git diff` to `view` command                    |
 
 ### Flow
