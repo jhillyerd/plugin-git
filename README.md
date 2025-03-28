@@ -16,12 +16,12 @@
 oh-my-fish:
 
 ```fish
-$ omf install https://github.com/jhillyerd/plugin-git
+omf install https://github.com/jhillyerd/plugin-git
 ```
 
 fisher:
 ```fish
-$ fisher install jhillyerd/plugin-git
+fisher install jhillyerd/plugin-git
 ```
 
 Nix's home-manager:
