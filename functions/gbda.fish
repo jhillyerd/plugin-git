@@ -13,7 +13,8 @@ function gbda -d "Delete all branches merged in current HEAD, including squashed
   __git.delete_branches (
     git branch --merged | \
       # *: current branch, +: current branch on worktree.
-      command grep -vE '^\*|^\+|^\s*(master|main|develop)\s*$'
+      command grep -vE '^\*|^\+|^\s*(master|main|develop)\s*$' | \
+      string trim
   )
 
   git for-each-ref refs/heads/ "--format=%(refname:short)" | \
