@@ -158,7 +158,7 @@ function __git.init
   # git checkout abbreviations
   __git.create_abbr gco        git checkout
   __git.create_abbr gcb        git checkout -b
-  __git.create_abbr gcod       git checkout develop
+  __git.create_abbr gcod       git checkout \(__git.develop_branch\)
   __git.create_abbr gcom       git checkout \(__git.default_branch\)
 
   # git flow abbreviations
