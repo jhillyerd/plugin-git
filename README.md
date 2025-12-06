@@ -131,7 +131,7 @@ gunwip           # restore work in progress
 | gban         | `git branch -a -v --no-merged`                       |
 | gbd          | `git branch -d`                                      |
 | gbD          | `git branch -D`                                      |
-| gbda         | delete all branches merged in current HEAD           |
+| gbda         | delete all branches merged in current HEAD, add `--gone` to include branches that have been deleted on remote |
 | gbage        | list local branches and display their age            |
 | ggsup        | `git branch --set-upstream-to=origin/(__git.current_branch)`  |
 | grename      | rename _old_ branch to _new_, including in origin remote      |
