@@ -357,6 +357,7 @@ gunwip           # restore work in progress
 | grh          | `git reset HEAD`                                            |
 | grhh         | `git reset HEAD --hard`                                     |
 | grhpa        | `git reset --patch`                                         |
+| grd          | Print current repository path                               |
 | grt          | cd into the top of the current repository or submodule      |
 | gsh          | `git show`                                                  |
 | gsd          | `git svn dcommit`                                           |
