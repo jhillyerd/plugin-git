@@ -353,11 +353,11 @@ gunwip           # restore work in progress
 | gma          | `git merge --abort`                                         |
 | gmt          | `git mergetool --no-prompt`                                 |
 | gmom         | `git merge origin/(__git.default_branch)`                   |
+| grel         | Print path relative to repository root                      |
 | grev         | `git revert`                                                |
 | grh          | `git reset HEAD`                                            |
 | grhh         | `git reset HEAD --hard`                                     |
 | grhpa        | `git reset --patch`                                         |
-| grd          | Print current repository path                               |
 | grt          | cd into the top of the current repository or submodule      |
 | gsh          | `git show`                                                  |
 | gsd          | `git svn dcommit`                                           |
