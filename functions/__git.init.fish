@@ -154,7 +154,7 @@ function __git.init
   __git.create_abbr gupv       git pull --rebase -v
   __git.create_abbr gupa       git pull --rebase --autostash
   __git.create_abbr gupav      git pull --rebase --autostash -v
-  __git.create_abbr gwch       git whatchanged -p --abbrev-commit --pretty=medium
+  __git.create_abbr gwch       git log -p --abbrev-commit --pretty=medium --raw --no-merges
 
   # git checkout abbreviations
   __git.create_abbr gco        git checkout
