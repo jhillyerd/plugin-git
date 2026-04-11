@@ -224,10 +224,18 @@ gunwip           # restore work in progress
 | gl           | `git pull`                                           |
 | ggl          | `git pull origin (__git.current_branch)`             |
 | gup          | `git pull --rebase`                                  |
+| gpr          | `git pull --rebase`                                  |
 | gupv         | `git pull --rebase -v`                               |
+| gprv         | `git pull --rebase -v`                               |
 | gupa         | `git pull --rebase --autostash`                      |
+| gpra         | `git pull --rebase --autostash`                      |
 | gupav        | `git pull --rebase --autostash -v`                   |
+| gprav        | `git pull --rebase --autostash -v`                   |
 | glr          | `git pull --rebase`                                  |
+| gprom        | `git pull --rebase origin (__git.default_branch)`    |
+| gpromi       | `git pull --rebase=interactive origin (__git.default_branch)` |
+| gprum        | `git pull --rebase upstream (__git.default_branch)`  |
+| gprumi       | `git pull --rebase=interactive upstream (__git.default_branch)` |
 | gp           | `git push`                                           |
 | gp!          | `git push --force-with-lease`                        |
 | gpo          | `git push origin`                                    |
