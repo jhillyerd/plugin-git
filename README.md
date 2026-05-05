@@ -161,6 +161,7 @@ gunwip           # restore work in progress
 | gcm          | `git commit -m`                                      |
 | gcam         | `git commit -a -m`                                   |
 | gcs          | `git commit -S`                                      |
+| gcs!         | `git commit -S --amend`                              |
 | gscam        | `git commit -S -a -m`                                |
 | gcfx         | `git commit --fixup`                                 |
 
