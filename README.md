@@ -151,10 +151,10 @@ gunwip           # restore work in progress
 | ------------ | ---------------------------------------------------- |
 | gc           | `git commit -v`                                      |
 | gc!          | `git commit -v --amend`                              |
-| gcn!         | `git commit -v --no-edit --amend`                    |
+| gcn!         | `git commit --no-edit --amend`                       |
 | gca          | `git commit -v -a`                                   |
 | gca!         | `git commit -v -a --amend`                           |
-| gcan!        | `git commit -v -a --no-edit --amend`                 |
+| gcan!        | `git commit -a --no-edit --amend`                    |
 | gcv          | `git commit -v --no-verify`                          |
 | gcav         | `git commit -a -v --no-verify`                       |
 | gcav!        | `git commit -a -v --no-verify --amend`               |
